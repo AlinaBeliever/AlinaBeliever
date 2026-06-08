@@ -12,7 +12,7 @@
 <meta name="google-site-verification" content="FVG9XsDQiYLBYxYD2s079yGN6IrIj2GLDQqt6EJIZ-4" />
 <link rel="canonical" href="https://alinabeliever.com/" />
 <link rel="alternate" hreflang="uk" href="https://alinabeliever.com/" />
-<link rel="alternate" hreflang="en" href="https://alinabeliever.com/en/" />
+<link rel="alternate" hreflang="en" href="https://alinabeliever.com/?lang=en" />
 <link rel="alternate" hreflang="x-default" href="https://alinabeliever.com/" />
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -321,8 +321,8 @@ float: {
   .port-info-title{font-size:14px!important;}
 }
 /* ── GSAP 3D card animation — послуги / процес ── */
-#послуги .card-hover,#процес .card-hover{will-change:transform,opacity;}
-#послуги>div.grid,#процес>div.grid{perspective:1000px;}
+#services .card-hover,#process .card-hover{will-change:transform,opacity;}
+#services>div.grid,#process>div.grid{perspective:1000px;}
 /* ── Dark theme overrides for Tailwind built-in classes ── */
 .bg-white{background-color:#474973!important;}
 .bg-cream\/80,.bg-cream{background-color:#011635!important;}
@@ -385,12 +385,12 @@ select.form-input option{background:#011635;color:#F0F0F5;}
 Alina<span class="text-accent">Believer</span>
 </a>
 <div class="hidden md:flex items-center gap-8">
-<a href="#послуги" class="nav-link"><span id="tl-nav-services">Послуги</span></a>
-<a href="#процес" class="nav-link"><span id="tl-nav-process">Процес</span></a>
-<a href="#тарифи" class="nav-link"><span id="tl-nav-pricing">Тарифи</span></a>
-<a href="#портфоліо" class="nav-link"><span id="tl-nav-portfolio">Портфоліо</span></a>
+<a href="#services" class="nav-link"><span id="tl-nav-services">Послуги</span></a>
+<a href="#process" class="nav-link"><span id="tl-nav-process">Процес</span></a>
+<a href="#pricing" class="nav-link"><span id="tl-nav-pricing">Тарифи</span></a>
+<a href="#portfolio" class="nav-link"><span id="tl-nav-portfolio">Портфоліо</span></a>
 <a href="#faq" class="nav-link"><span id="tl-nav-faq">FAQ</span></a>
-<a href="#контакт" class="nav-link"><span id="tl-nav-contact">Контакт</span></a>
+<a href="#contact" class="nav-link"><span id="tl-nav-contact">Контакт</span></a>
 </div>
 <!-- Lang switcher -->
 <div class="hidden md:flex items-center gap-1 mr-2">
@@ -398,7 +398,7 @@ Alina<span class="text-accent">Believer</span>
 <span class="text-muted" style="font-size:12px;">|</span>
 <button onclick="setLang('en')" id="btn-en" class="lang-btn" aria-label="English">EN</button>
 </div>
-<a href="#контакт" class="hidden md:inline-flex btn-primary py-3 px-6 text-sm">
+<a href="#contact" class="hidden md:inline-flex btn-primary py-3 px-6 text-sm">
 <span id="tl-nav-cta">Замовити сайт</span> <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
 </a>
 <div class="flex md:hidden items-center gap-0 mr-2 rounded-full" style="padding:2px;border:1px solid rgba(240,240,245,0.12);background:rgba(240,240,245,0.05);">
@@ -411,18 +411,18 @@ Alina<span class="text-accent">Believer</span>
 </nav>
 <!-- MOBILE MENU -->
 <div id="mobile-menu" class="fixed inset-0 z-40 flex-col pt-20 px-6 pb-8 gap-6" style="background:#011635;">
-<a href="#послуги" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-services">Послуги</span></a>
-<a href="#процес" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-process">Процес</span></a>
-<a href="#тарифи" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-pricing">Тарифи</span></a>
-<a href="#портфоліо" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-portfolio">Портфоліо</span></a>
+<a href="#services" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-services">Послуги</span></a>
+<a href="#process" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-process">Процес</span></a>
+<a href="#pricing" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-pricing">Тарифи</span></a>
+<a href="#portfolio" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-portfolio">Портфоліо</span></a>
 <a href="#faq" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-faq">FAQ</span></a>
-<a href="#контакт" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-contact">Контакт</span></a>
+<a href="#contact" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-contact">Контакт</span></a>
 <div class="flex items-center gap-3 py-3">
 <button onclick="setLang('uk')" id="btn-uk-mob" class="lang-btn active-lang">UA</button>
 <span class="text-muted">|</span>
 <button onclick="setLang('en')" id="btn-en-mob" class="lang-btn">EN</button>
 </div>
-<a href="#контакт" onclick="toggleMenu()" class="btn-primary justify-center mt-4"><span id="tl-mob-cta">Замовити сайт</span></a>
+<a href="#contact" onclick="toggleMenu()" class="btn-primary justify-center mt-4"><span id="tl-mob-cta">Замовити сайт</span></a>
 </div>
 <main id="main-content">
 <!-- HERO -->
@@ -457,10 +457,10 @@ Alina<span class="text-accent">Believer</span>
 <span id="tl-hero-sub">Розробляю сучасні веб-сайти для бізнесу — швидкі, красиві та готові залучати клієнтів з першого дня.</span>
 </p>
 <div class="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start animate-fade-up mb-10" style="animation-delay:0.3s;">
-<a href="#тарифи" class="btn-primary">
+<a href="#pricing" class="btn-primary">
 <span id="tl-hero-btn1">Переглянути тарифи</span> <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
 </a>
-<a href="#портфоліо" class="btn-outline">
+<a href="#portfolio" class="btn-outline">
 <span id="tl-hero-btn2">Портфоліо</span>
 </a>
 </div>
@@ -489,7 +489,7 @@ Alina<span class="text-accent">Believer</span>
 </div>
 </section>
 <!-- SERVICES -->
-<section id="послуги" class="py-24 md:py-32 px-6 max-w-6xl mx-auto">
+<section id="services" class="py-24 md:py-32 px-6 max-w-6xl mx-auto">
 <div class="text-center mb-16">
 <p class="section-label reveal"><span id="tl-s-label">— Що ви отримуєте</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
@@ -541,7 +541,7 @@ Alina<span class="text-accent">Believer</span>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
 <!-- PROCESS -->
-<section id="процес" class="py-24 md:py-32 px-6 max-w-6xl mx-auto">
+<section id="process" class="py-24 md:py-32 px-6 max-w-6xl mx-auto">
 <div class="text-center mb-16">
 <p class="section-label reveal"><span id="tl-p-label">— Як я працюю</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
@@ -597,7 +597,7 @@ Alina<span class="text-accent">Believer</span>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
 <!-- PRICING -->
-<section id="тарифи" class="py-24 md:py-32 px-6 max-w-5xl mx-auto">
+<section id="pricing" class="py-24 md:py-32 px-6 max-w-5xl mx-auto">
 <div class="text-center mb-16">
 <p class="section-label reveal"><span id="tl-pr-label">— Тарифи</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
@@ -713,7 +713,7 @@ Alina<span class="text-accent">Believer</span>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
 <!-- POST-LAUNCH SUPPORT -->
-<section id="підтримка" class="py-24 md:py-32 px-6 max-w-5xl mx-auto">
+<section id="support" class="py-24 md:py-32 px-6 max-w-5xl mx-auto">
 <div class="text-center mb-14">
 <p class="section-label reveal"><span id="tl-sup-label">— Після запуску</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
@@ -852,7 +852,7 @@ Alina<span class="text-accent">Believer</span>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
 <!-- PORTFOLIO -->
-<section id="портфоліо">
+<section id="portfolio">
 <div class="py-20 md:py-28 px-6 text-center max-w-7xl mx-auto">
 <p class="section-label reveal"><span id="tl-port-label">— Портфоліо</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1"><span id="tl-port-h2">Приклади робіт</span></h2>
@@ -1056,14 +1056,14 @@ Alina<span class="text-accent">Believer</span>
 <p class="text-lg max-w-lg mx-auto mb-10" id="tl-cta-p" style="color:#9090B0;">
 Залиште заявку і я зв'яжуся з вами впродовж кількох годин для безкоштовної консультації.
 </p>
-<a href="#контакт" class="btn-primary">
+<a href="#contact" class="btn-primary">
 <span id="tl-cta-btn">Залишити заявку</span> <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
 </a>
 </div>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
 <!-- CONTACT FORM -->
-<section id="контакт" class="py-24 md:py-32 px-6 max-w-3xl mx-auto">
+<section id="contact" class="py-24 md:py-32 px-6 max-w-3xl mx-auto">
 <div class="text-center mb-12">
 <p class="section-label reveal"><span id="tl-con-label">— Зв'язок</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
@@ -1230,12 +1230,12 @@ alinabeliever.digital@gmail.com
 <div>
 <p class="font-semibold text-sm mb-3 text-ink" id="tl-foot-nav">Навігація</p>
 <div class="flex flex-col gap-2">
-<a href="#послуги" class="nav-link text-sm"><span id="tl-foot-link-services">Послуги</span></a>
-<a href="#процес" class="nav-link text-sm"><span id="tl-foot-link-process">Процес</span></a>
-<a href="#тарифи" class="nav-link text-sm"><span id="tl-foot-link-pricing">Тарифи</span></a>
-<a href="#портфоліо" class="nav-link text-sm"><span id="tl-foot-link-portfolio">Портфоліо</span></a>
+<a href="#services" class="nav-link text-sm"><span id="tl-foot-link-services">Послуги</span></a>
+<a href="#process" class="nav-link text-sm"><span id="tl-foot-link-process">Процес</span></a>
+<a href="#pricing" class="nav-link text-sm"><span id="tl-foot-link-pricing">Тарифи</span></a>
+<a href="#portfolio" class="nav-link text-sm"><span id="tl-foot-link-portfolio">Портфоліо</span></a>
 <a href="#faq" class="nav-link text-sm">FAQ</a>
-<a href="#контакт" class="nav-link text-sm"><span id="tl-foot-link-contact">Контакт</span></a>
+<a href="#contact" class="nav-link text-sm"><span id="tl-foot-link-contact">Контакт</span></a>
 </div>
 </div>
 <div>
@@ -1300,7 +1300,7 @@ alinabeliever.digital@gmail.com
 </div>
 <!-- Sticky mobile CTA -->
 <div id="mobile-cta" class="mobile-cta-bar">
-<a href="#контакт" class="mobile-cta-btn">
+<a href="#contact" class="mobile-cta-btn">
 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41a2 2 0 0 1 1.99-2.18H6.6a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
 <span id="tl-mob-cta-bar">Залишити заявку</span>
 </a>
@@ -1568,8 +1568,11 @@ cookies_body:`<p>This website uses a minimal number of cookies to ensure proper 
 }
 };
 let currentLang = 'uk';
-function setLang(lang) {
+function setLang(lang, pushState) {
 currentLang = lang;
+const url = new URL(window.location.href);
+if (lang === 'en') { url.searchParams.set('lang', 'en'); } else { url.searchParams.delete('lang'); }
+if (pushState !== false) history.replaceState(null, '', url.toString());
 const t = T[lang];
 document.documentElement.lang = lang === 'uk' ? 'uk' : 'en';
 document.title = lang === 'uk'
@@ -1869,7 +1872,7 @@ select.classList.remove('error');
 const err = document.getElementById('plan-error');
 if (err) err.classList.remove('show');
 }
-document.getElementById('контакт').scrollIntoView({ behavior: 'smooth' });
+document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 }
 const countries = [
 {name:'Австралія',flag:'🇦🇺',code:'+61'},{name:'Австрія',flag:'🇦🇹',code:'+43'},
@@ -2272,6 +2275,12 @@ document.querySelectorAll('.port-stack-card').forEach(function(card){
   });
 });
 
+/* Auto-detect ?lang=en on page load */
+(function(){
+  const p = new URLSearchParams(window.location.search).get('lang');
+  if (p === 'en') setLang('en', false);
+})();
+
 </script>
 <!-- GSAP + ScrollTrigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -2280,14 +2289,14 @@ document.querySelectorAll('.port-stack-card').forEach(function(card){
 (function(){
   gsap.registerPlugin(ScrollTrigger);
 
-  var cards = document.querySelectorAll('#послуги .card-hover, #процес .card-hover');
+  var cards = document.querySelectorAll('#services .card-hover, #process .card-hover');
 
   cards.forEach(function(card){
     card.classList.remove('reveal','reveal-delay-1','reveal-delay-2','reveal-delay-3');
   });
 
   /* Ліво/право для Тарифи та Після запуску */
-  ['#тарифи', '#підтримка'].forEach(function(sectionId){
+  ['#pricing', '#support'].forEach(function(sectionId){
     var section = document.querySelector(sectionId);
     if(!section) return;
     var sCards = section.querySelectorAll('.card-hover');
