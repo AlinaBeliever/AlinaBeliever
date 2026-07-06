@@ -65,13 +65,13 @@
 {
 "@type": "Offer",
 "name": "Standard",
-"price": "300",
+"price": "100",
 "priceCurrency": "EUR"
 },
 {
 "@type": "Offer",
 "name": "Pro",
-"price": "500",
+"price": "180",
 "priceCurrency": "EUR"
 }
 ]
@@ -101,7 +101,7 @@
 "name": "Що відбувається після запуску — сайт залишається моїм?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Так, сайт повністю ваш. За бажанням можна придбати щомісячну підписку на обслуговування, яка включає 3 раунди правок на місяць — але це лише за вашим бажанням, жодних зобов'язань."
+"text": "Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань."
 }
 },
 {
@@ -179,8 +179,8 @@ float: {
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<style>*{scroll-behavior:smooth}html{overflow-x:clip}body{background-color:#011635;color:#F0F0F5;font-family:'DM Sans',sans-serif;overflow-x:clip;max-width:100vw}.grain{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}.hero-bg{background:radial-gradient(ellipse 80% 60% at 50% 0%,#6C63FF18 0%,transparent 70%),radial-gradient(ellipse 50% 40% at 90% 80%,#6C63FF10 0%,transparent 60%);touch-action:pan-y;overflow:clip}.tag{display:inline-flex;align-items:center;gap:6px;background:#F0F0F510;border:1px solid #6C63FF40;border-radius:999px;padding:4px 14px;font-size:13px;font-family:'DM Mono',monospace;color:#F0F0F5}.card-hover{transition:transform 0.3s ease,box-shadow 0.3s ease}.card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(108,99,255,0.2)}.btn-primary{background:#6C63FF;color:#F0F0F5;padding:14px 32px;border-radius:999px;font-weight:500;font-size:15px;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:none}.btn-primary:hover{background:#5A52E0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(108,99,255,0.45)}.btn-outline{background:transparent;color:#F0F0F5;padding:14px 32px;border-radius:999px;font-weight:500;font-size:15px;border:1.5px solid #F0F0F530;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;cursor:pointer}.btn-outline:hover{border-color:#6C63FF;background:#6C63FF15;transform:translateY(-2px)}.nav-link{color:#F0F0F5;font-size:14px;font-weight:500;transition:color 0.2s ease;text-decoration:none}.nav-link:hover{color:#6C63FF}.section-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6C63FF;margin-bottom:12px}.divider{border:none;border-top:1px solid #F0F0F512}.process-step{counter-increment:step}.process-num{font-family:'DM Mono',monospace;font-size:11px;color:#6C63FF;margin-bottom:8px}.floating-badge{background:#1A1A2E;border-radius:16px;padding:10px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.5);font-size:13px;font-weight:500;white-space:nowrap;color:#F0F0F5;border:1px solid #6C63FF25}.floating-badge:not(.static){position:absolute}.floating-badge.static{background:#474973;}.reveal{opacity:0;transform:translateY(22px);transition:opacity 0.65s ease,transform 0.65s ease}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay-1{transition-delay:0.1s}.reveal-delay-2{transition-delay:0.2s}.reveal-delay-3{transition-delay:0.3s}.form-input{width:100%;background:rgba(1,22,53,0.5);border:1.5px solid rgba(108,99,255,0.25);border-radius:14px;padding:14px 18px;font-family:'DM Sans',sans-serif;font-size:15px;color:#F0F0F5;transition:border-color 0.2s ease,box-shadow 0.2s ease;outline:none;resize:none}.form-input:focus{border-color:#6C63FF;box-shadow:0 0 0 3px rgba(108,99,255,0.2)}.form-input::placeholder{color:rgba(240,240,245,0.35)}.form-input.error{border-color:#E05555}.error-msg{color:#E05555;font-size:12px;margin-top:4px;display:none}.error-msg.show{display:block}.success-banner{display:none;background:#6C63FF;color:#F0F0F5;padding:20px 28px;border-radius:16px;text-align:center}.success-banner.show{display:block}.lang-btn{background:none;border:none;cursor:pointer;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0.08em;padding:4px 6px;border-radius:6px;transition:color 0.2s ease,background 0.2s ease}.lang-btn:hover{color:var(--ink)}.lang-btn.active-lang{color:#F0F0F5;background:rgba(240,240,245,0.12)}.mobile-cta-bar{display:none;position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;z-index:60;width:fit-content;transition:opacity 0.3s ease}.mobile-cta-btn{display:inline-flex;align-items:center;gap:8px;background:#6C63FF;color:#F0F0F5;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:13px 22px;border-radius:999px;text-decoration:none;box-shadow:0 6px 28px rgba(108,99,255,0.5);transition:background 0.2s ease,transform 0.2s ease;white-space:nowrap}.mobile-cta-btn:active{transform:scale(0.97);background:#5A52E0;color:#F0F0F5}@media (max-width:767px){.mobile-cta-bar{display:block}#cookie-banner{bottom:calc(90px + env(safe-area-inset-bottom,0px));z-index:70}}#mobile-menu{display:none}#mobile-menu.open{display:flex}.plan-card{transition:all 0.3s ease}.plan-card.popular{background:#6C63FF;color:#F0F0F5}.check-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}.check-icon{flex-shrink:0;margin-top:2px}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.marquee-track{display:flex;animation:marquee 80s linear infinite;width:max-content}.marquee-track:hover{animation-play-state:paused}.cursor-dot{width:8px;height:8px;background:#6C63FF;border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform 0.1s ease;display:none}@media (min-width:1024px){.cursor-dot{display:block}}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>*{scroll-behavior:smooth}html{overflow-x:clip}body{background-color:#011635;color:#F0F0F5;font-family:'DM Sans',sans-serif;overflow-x:clip;max-width:100vw;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-kerning:normal}button,input,select,textarea{font-family:inherit}.grain{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}.hero-bg{background:radial-gradient(ellipse 80% 60% at 50% 0%,#6C63FF18 0%,transparent 70%),radial-gradient(ellipse 50% 40% at 90% 80%,#6C63FF10 0%,transparent 60%);touch-action:pan-y;overflow:clip}.tag{display:inline-flex;align-items:center;gap:6px;background:#F0F0F510;border:1px solid #6C63FF40;border-radius:999px;padding:4px 14px;font-size:13px;font-family:'DM Mono',monospace;color:#F0F0F5}.card-hover{transition:transform 0.3s ease,box-shadow 0.3s ease}.card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(108,99,255,0.2)}.btn-primary{background:#6C63FF;color:#F0F0F5;padding:14px 32px;border-radius:999px;font-weight:500;font-size:15px;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:none}.btn-primary:hover{background:#5A52E0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(108,99,255,0.45)}.btn-outline{background:transparent;color:#F0F0F5;padding:14px 32px;border-radius:999px;font-weight:500;font-size:15px;border:1.5px solid #F0F0F530;transition:all 0.3s ease;display:inline-flex;align-items:center;gap:8px;cursor:pointer}.btn-outline:hover{border-color:#6C63FF;background:#6C63FF15;transform:translateY(-2px)}.nav-link{color:#F0F0F5;font-size:14px;font-weight:500;transition:color 0.2s ease;text-decoration:none}.nav-link:hover{color:#6C63FF}.section-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6C63FF;margin-bottom:12px}.divider{border:none;border-top:1px solid #F0F0F512}.process-step{counter-increment:step}.process-num{font-family:'DM Mono',monospace;font-size:11px;color:#6C63FF;margin-bottom:8px}.floating-badge{background:#1A1A2E;border-radius:16px;padding:10px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.5);font-size:13px;font-weight:500;white-space:nowrap;color:#F0F0F5;border:1px solid #6C63FF25}.floating-badge:not(.static){position:absolute}.floating-badge.static{background:#474973;}.reveal{opacity:0;transform:translateY(22px);transition:opacity 0.65s ease,transform 0.65s ease}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay-1{transition-delay:0.1s}.reveal-delay-2{transition-delay:0.2s}.reveal-delay-3{transition-delay:0.3s}.form-input{width:100%;background:rgba(1,22,53,0.5);border:1.5px solid rgba(108,99,255,0.25);border-radius:14px;padding:14px 18px;font-family:'DM Sans',sans-serif;font-size:15px;color:#F0F0F5;transition:border-color 0.2s ease,box-shadow 0.2s ease;outline:none;resize:none}.form-input:focus{border-color:#6C63FF;box-shadow:0 0 0 3px rgba(108,99,255,0.2)}.form-input::placeholder{color:rgba(240,240,245,0.35)}.form-input.error{border-color:#E05555}#plan-group.error #plan-btn{border-color:#E05555}.error-msg{color:#E05555;font-size:12px;margin-top:4px;display:none}.error-msg.show{display:block}.success-banner{display:none;background:#6C63FF;color:#F0F0F5;padding:20px 28px;border-radius:16px;text-align:center}.success-banner.show{display:block}.lang-btn{background:none;border:none;cursor:pointer;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0.08em;padding:4px 6px;border-radius:6px;transition:color 0.2s ease,background 0.2s ease}.lang-btn:hover{color:var(--ink)}.lang-btn.active-lang{color:#F0F0F5;background:rgba(240,240,245,0.12)}.mobile-cta-bar{display:none;position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px;z-index:60;width:fit-content;transition:opacity 0.3s ease}.mobile-cta-btn{display:inline-flex;align-items:center;gap:8px;background:#6C63FF;color:#F0F0F5;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:13px 22px;border-radius:999px;text-decoration:none;box-shadow:0 6px 28px rgba(108,99,255,0.5);transition:background 0.2s ease,transform 0.2s ease;white-space:nowrap}.mobile-cta-btn:active{transform:scale(0.97);background:#5A52E0;color:#F0F0F5}@media (max-width:767px){.mobile-cta-bar{display:block}#cookie-banner{bottom:calc(90px + env(safe-area-inset-bottom,0px));z-index:70}}#mobile-menu{display:none}#mobile-menu.open{display:flex}.plan-card{transition:all 0.3s ease}.plan-card.popular{background:#6C63FF;color:#F0F0F5}.check-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}.check-icon{flex-shrink:0;margin-top:2px}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.marquee-track{display:flex;animation:marquee 80s linear infinite;width:max-content}.marquee-track:hover{animation-play-state:paused}.cursor-dot{width:8px;height:8px;background:#6C63FF;border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform 0.1s ease;display:none}@media (min-width:1024px){.cursor-dot{display:block}}
 /* ─── PORTFOLIO SCROLL STACK ─── */
 .port-stack-wrap{height:calc(5 * 100vh);}
 .port-stack-item{position:sticky;top:0;height:100vh;overflow:hidden;will-change:transform;}
@@ -621,37 +621,37 @@ Alina<span class="text-accent">Believer</span>
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f1">Повна передача прав на сайт та код</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f1">Сайт-візитка (до 4-5 секцій)</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f2">Підключення вашого домену</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f2">Адаптивний дизайн</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f3">Хостинг на швидкому сервері</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f3">Форма зв'язку</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f4">Без щомісячної абонплати за платформу</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f4">Повна передача прав</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f5">Адаптивний дизайн для всіх пристроїв</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f5">Підключення домену</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
 <svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-std-f6">3 раунди правок до публікації сайту</span>
+<span class="text-sm leading-relaxed" id="tl-pr-std-f6">Швидкий сервер без абонплати</span>
 </div>
 </div>
 <button onclick="selectPlan('Standard — 100€')" class="btn-outline w-full justify-center mt-auto">
@@ -669,7 +669,7 @@ Alina<span class="text-accent">Believer</span>
 <div class="mb-6">
 <p class="font-mono text-sm mb-2" id="tl-pr-pro" style="color:rgba(240,240,245,0.6);">Pro</p>
 <div class="flex items-baseline gap-2 mb-1">
-<span class="font-display text-5xl font-semibold" style="color:#F0F0F5;">250€</span>
+<span class="font-display text-5xl font-semibold" style="color:#F0F0F5;">180€</span>
 </div>
 <p class="text-sm" id="tl-pr-pro-note" style="color:rgba(240,240,245,0.6);">Разова оплата, без абонплати</p>
 </div>
@@ -679,28 +679,28 @@ Alina<span class="text-accent">Believer</span>
 <div class="check-icon w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(240,240,245,0.2);">
 <svg class="w-3 h-3" style="color:#F0F0F5;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-pro-f1" style="color:rgba(240,240,245,0.85);">Все з пакету Standard</span>
+<span class="text-sm leading-relaxed" id="tl-pr-pro-f1" style="color:rgba(240,240,245,0.85);">Багатосторінковий сайт</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(240,240,245,0.2);">
 <svg class="w-3 h-3" style="color:#F0F0F5;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-pro-f2" style="color:rgba(240,240,245,0.85);">SEO-оптимізація для Google</span>
+<span class="text-sm leading-relaxed" id="tl-pr-pro-f2" style="color:rgba(240,240,245,0.85);">Каталог / великий прайс</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(240,240,245,0.2);">
 <svg class="w-3 h-3" style="color:#F0F0F5;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-pro-f4" style="color:rgba(240,240,245,0.85);">1 місяць підписки після запуску <span class="text-xs" style="color:rgba(240,240,245,0.6);">(3 раунди правок/міс)</span></span>
+<span class="text-sm leading-relaxed" id="tl-pr-pro-f3" style="color:rgba(240,240,245,0.85);">Галерея, команда, кастомна логіка</span>
 </div>
 <div class="check-item">
 <div class="check-icon w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(240,240,245,0.2);">
 <svg class="w-3 h-3" style="color:#F0F0F5;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
 </div>
-<span class="text-sm leading-relaxed" id="tl-pr-pro-f5" style="color:rgba(240,240,245,0.85);">Поглиблена оптимізація швидкості</span>
+<span class="text-sm leading-relaxed" id="tl-pr-pro-f4" style="color:rgba(240,240,245,0.85);">Все, що входить у Standard</span>
 </div>
 </div>
-<button onclick="selectPlan('Pro — 250€')" class="w-full justify-center mt-auto" style="background:#F0F0F5;color:#011635;padding:14px 32px;border-radius:999px;font-weight:600;font-size:15px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease;" onmouseover="this.style.background='#E0E0EA'" onmouseout="this.style.background='#F0F0F5'">
+<button onclick="selectPlan('Pro — 180€')" class="w-full justify-center mt-auto" style="background:#F0F0F5;color:#011635;padding:14px 32px;border-radius:999px;font-weight:600;font-size:15px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease;" onmouseover="this.style.background='#E0E0EA'" onmouseout="this.style.background='#F0F0F5'">
 <span id="tl-pr-pro-btn">Замовити Pro</span>
 </button>
 </div>
@@ -712,79 +712,66 @@ Alina<span class="text-accent">Believer</span>
 </p>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
-<!-- POST-LAUNCH SUPPORT -->
+<!-- OPTIONS / ADD-ONS -->
 <section id="support" class="py-24 md:py-32 px-6 max-w-5xl mx-auto">
 <div class="text-center mb-14">
-<p class="section-label reveal"><span id="tl-sup-label">— Після запуску</span></p>
+<p class="section-label reveal"><span id="tl-sup-label">— Опції</span></p>
 <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1">
-<span id="tl-sup-h2">Сайт запущено — що далі?</span>
+<span id="tl-sup-h2">Опції до будь-якого тарифу</span>
 </h2>
-<p class="text-muted mt-4 text-lg reveal reveal-delay-2"><span id="tl-sup-sub">Я залишаюсь на зв'язку після здачі проєкту</span></p>
+<p class="text-muted mt-4 text-lg reveal reveal-delay-2"><span id="tl-sup-sub">Додайте будь-яку опцію до пакету Standard або Pro</span></p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-<!-- Card 1 — One-time -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-6">
+<!-- Option 1 — SEO -->
 <div class="bg-white rounded-2xl p-8 card-hover reveal border border-ink/5 flex flex-col">
-<div class="mb-6">
-<p class="font-mono text-sm text-muted mb-2" id="tl-sup1-t">Разовий раунд правок</p>
+<div class="mb-2">
+<p class="font-mono text-sm text-muted mb-2" id="tl-sup1-t">Поглиблена SEO-оптимізація</p>
 <div class="flex items-baseline gap-2 mb-1">
-<span class="font-display text-5xl font-semibold">30€</span>
-</div>
-<p class="text-muted text-sm" id="tl-sup1-note">за одну сесію правок</p>
-</div>
-<hr class="divider mb-6" />
-<div class="space-y-3 mb-8">
-<div class="check-item">
-<div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
-<svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-</div>
-<span class="text-sm leading-relaxed" id="tl-sup1-f1">1 раунд правок за потребою</span>
-</div>
-<div class="check-item">
-<div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
-<svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-</div>
-<span class="text-sm leading-relaxed" id="tl-sup1-f2">Оновлення тексту, фото, цін</span>
+<span class="font-display text-4xl font-semibold">40€</span>
 </div>
 </div>
-<button onclick="selectPlan('Разовий раунд правок — 30€')" class="btn-outline w-full justify-center mt-auto">
-<span id="tl-sup1-btn">Замовити правки</span>
+<button onclick="selectPlan('Опція: Поглиблена SEO-оптимізація — 40€')" class="btn-outline w-full justify-center mt-6">
+<span id="tl-sup1-btn">Додати опцію</span>
 </button>
 </div>
-<!-- Card 2 — Subscription -->
-<div class="bg-white rounded-2xl p-8 card-hover reveal reveal-delay-1 border border-ink/5 relative overflow-hidden flex flex-col">
-<div class="absolute -bottom-12 -right-12 w-40 h-40 rounded-full border border-ink/5"></div>
-<div class="mb-6">
-<p class="font-mono text-sm text-muted mb-2" id="tl-sup2-t">Щомісячна підписка</p>
+<!-- Option 2 — Speed -->
+<div class="bg-white rounded-2xl p-8 card-hover reveal reveal-delay-1 border border-ink/5 flex flex-col">
+<div class="mb-2">
+<p class="font-mono text-sm text-muted mb-2" id="tl-sup2-t">Поглиблена оптимізація швидкості</p>
 <div class="flex items-baseline gap-2 mb-1">
-<span class="font-display text-5xl font-semibold">50€</span>
-<span class="text-muted text-sm" id="tl-sup2-per">/міс</span>
-</div>
-<p class="text-muted text-sm" id="tl-sup2-note">Скасування будь-коли</p>
-</div>
-<hr class="divider mb-6" />
-<div class="space-y-3 mb-6">
-<div class="check-item">
-<div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
-<svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-</div>
-<span class="text-sm leading-relaxed" id="tl-sup2-f1">3 раунди правок щомісяця</span>
-</div>
-<div class="check-item">
-<div class="check-icon w-5 h-5 rounded-full bg-accent-light flex items-center justify-center flex-shrink-0">
-<svg class="w-3 h-3 text-accent" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-</div>
-<span class="text-sm leading-relaxed" id="tl-sup2-f2">Пріоритетна черга</span>
+<span class="font-display text-4xl font-semibold">20€</span>
 </div>
 </div>
-<!-- Savings badge -->
-<div class="rounded-xl px-4 py-2 mb-6 flex items-center gap-2 mt-auto" style="background:#1A1830;border:1px solid rgba(108,99,255,0.3);">
-<svg class="w-4 h-4 text-accent flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>
-<span class="text-sm text-ink font-medium" id="tl-sup2-save">Економія 40€ порівняно з разовими</span>
-</div>
-<button onclick="selectPlan('Щомісячна підписка — 50€/міс')" class="btn-outline w-full justify-center">
-<span id="tl-sup2-btn">Підключити підписку</span>
+<button onclick="selectPlan('Опція: Поглиблена оптимізація швидкості — 20€')" class="btn-outline w-full justify-center mt-6">
+<span id="tl-sup2-btn">Додати опцію</span>
 </button>
 </div>
+<!-- Option 3 — Support -->
+<div class="bg-white rounded-2xl p-8 card-hover reveal reveal-delay-2 border border-ink/5 flex flex-col">
+<div class="mb-2">
+<p class="font-mono text-sm text-muted mb-2" id="tl-sup3-t">Підтримка 1 міс (3 правки)</p>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-display text-4xl font-semibold">50€</span>
+</div>
+</div>
+<button onclick="selectPlan('Опція: Підтримка 1 міс (3 правки) — 50€')" class="btn-outline w-full justify-center mt-6">
+<span id="tl-sup3-btn">Додати опцію</span>
+</button>
+</div>
+</div>
+<!-- Bundle -->
+<div class="max-w-2xl mx-auto rounded-2xl p-8 card-hover reveal reveal-delay-1 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-6" style="background:#6C63FF;">
+<div class="absolute -bottom-12 -right-12 w-40 h-40 rounded-full border" style="border-color:rgba(240,240,245,0.15);"></div>
+<div class="relative text-center sm:text-left">
+<p class="font-mono text-sm mb-1" id="tl-sup4-t" style="color:rgba(240,240,245,0.6);">Всі 3 опції разом</p>
+<div class="flex items-baseline gap-3 justify-center sm:justify-start">
+<span class="font-display text-4xl font-semibold" style="color:#F0F0F5;">80€</span>
+<span class="text-sm" id="tl-sup4-save" style="color:rgba(240,240,245,0.75);">економія 30€</span>
+</div>
+</div>
+<button onclick="selectPlan('Всі 3 опції разом — 80€')" class="relative w-full sm:w-auto justify-center flex-shrink-0" style="background:#F0F0F5;color:#011635;padding:14px 32px;border-radius:999px;font-weight:600;font-size:15px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease;" onmouseover="this.style.background='#E0E0EA'" onmouseout="this.style.background='#F0F0F5'">
+<span id="tl-sup4-btn">Замовити опції</span>
+</button>
 </div>
 </section>
 <hr class="divider max-w-6xl mx-auto" />
@@ -840,8 +827,8 @@ Alina<span class="text-accent">Believer</span>
 <div class="text-sm" id="tl-stat2l" style="color:rgba(240,240,245,0.7);">передача прав та доступів</div>
 </div>
 <div class="bg-white rounded-2xl p-8 card-hover text-center">
-<div class="font-display text-5xl font-semibold mb-2" id="tl-stat3" style="color:#F0F0F5;">30</div>
-<div class="text-muted text-sm" id="tl-stat3l">днів підтримки у Pro</div>
+<div class="font-display text-5xl font-semibold mb-2" id="tl-stat3" style="color:#F0F0F5;">2</div>
+<div class="text-muted text-sm" id="tl-stat3l">тарифи під будь-який бізнес</div>
 </div>
 <div class="rounded-2xl p-8 card-hover text-center" style="background:#474973;border:1px solid rgba(108,99,255,0.1);">
 <div class="font-display text-5xl font-semibold mb-2" id="tl-stat4" style="color:#F0F0F5;">0€</div>
@@ -894,36 +881,36 @@ Alina<span class="text-accent">Believer</span>
 </div>
 </div>
 
-<!-- Stack 3 — Crema Cafe -->
+<!-- Stack 3 — Khmarna Photography -->
 <div class="port-stack-item">
 <div class="port-stack-card">
 <div class="port-split-info">
 <div class="port-deco-num">03</div>
 <div class="port-info-content">
 <span class="port-info-num">03 / 05</span>
-<span class="port-info-cat" id="tl-port-cat3">Ресторанний бізнес</span>
-<p class="port-info-title" id="tl-port-t3">Crema — Кав'ярня у Львові</p>
-<a href="https://alinabeliever.github.io/crema_cafe/" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
+<span class="port-info-cat" id="tl-port-cat3">Фотографія</span>
+<p class="port-info-title" id="tl-port-t3">Khmarna Photography — Сімейний фотограф</p>
+<a href="https://khmarnaphotography.com" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
 </div>
 </div>
-<div class="port-split-photo"><img src="cremacafe.png" alt="Crema Cafe" loading="lazy"></div>
+<div class="port-split-photo"><img src="khmarna.png" alt="Khmarna Photography" loading="lazy"></div>
 <div class="port-dots-nav"><span></span><span></span><span class="pdn-active"></span><span></span><span></span></div>
 </div>
 </div>
 
-<!-- Stack 4 — Ficus Mebli -->
+<!-- Stack 4 — Crema Cafe -->
 <div class="port-stack-item">
 <div class="port-stack-card">
 <div class="port-split-info">
 <div class="port-deco-num">04</div>
 <div class="port-info-content">
 <span class="port-info-num">04 / 05</span>
-<span class="port-info-cat" id="tl-port-cat4">Магазин меблів</span>
-<p class="port-info-title" id="tl-port-t4">Ficus Mebli — Інтернет-магазин меблів</p>
-<a href="https://ficusmebli.netlify.app/" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
+<span class="port-info-cat" id="tl-port-cat4">Ресторанний бізнес</span>
+<p class="port-info-title" id="tl-port-t4">Crema — Кав'ярня у Львові</p>
+<a href="https://alinabeliever.github.io/crema_cafe/" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
 </div>
 </div>
-<div class="port-split-photo"><img src="mebli.png" alt="Ficus Mebli" loading="lazy"></div>
+<div class="port-split-photo"><img src="cremacafe.png" alt="Crema Cafe" loading="lazy"></div>
 <div class="port-dots-nav"><span></span><span></span><span></span><span class="pdn-active"></span><span></span></div>
 </div>
 </div>
@@ -937,7 +924,7 @@ Alina<span class="text-accent">Believer</span>
 <span class="port-info-num">05 / 05</span>
 <span class="port-info-cat" id="tl-port-cat5">Краса та здоров'я</span>
 <p class="port-info-title" id="tl-port-t5">Nua Laser — Лазерна епіляція</p>
-<a href="https://alinabeliever.github.io/nua_laser/" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
+<a href="https://nualaser.com" target="_blank" rel="noopener" class="port-info-visit"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg><span class="port-visit-text">Відкрити сайт</span></a>
 </div>
 </div>
 <div class="port-split-photo"><img src="nualaser.png" alt="Nua Laser" loading="lazy"></div>
@@ -990,7 +977,7 @@ Alina<span class="text-accent">Believer</span>
 </span>
 </div>
 <div class="faq-answer overflow-hidden" style="max-height:0; transition: max-height 0.35s ease, padding 0.35s ease;">
-<p class="px-7 pb-6 text-muted leading-relaxed">Так, сайт повністю ваш. За бажанням можна придбати щомісячну підписку на обслуговування, яка включає 3 раунди правок на місяць — але це лише за вашим бажанням, жодних зобов'язань.</p>
+<p class="px-7 pb-6 text-muted leading-relaxed">Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань.</p>
 </div>
 </div>
 <!-- Q4 -->
@@ -1026,7 +1013,7 @@ Alina<span class="text-accent">Believer</span>
 </span>
 </div>
 <div class="faq-answer overflow-hidden" style="max-height:0; transition: max-height 0.35s ease, padding 0.35s ease;">
-<p class="px-7 pb-6 text-muted leading-relaxed">У пакеті Standard — 3 раунди правок до публікації сайту, у Pro — також 3 до публікації + 3 раунди правок впродовж бонусного місяця підтримки.</p>
+<p class="px-7 pb-6 text-muted leading-relaxed">Кількість правок узгоджується індивідуально в процесі розробки. Після запуску можна докупити опцію підтримки на 1 місяць (3 правки) за 50€.</p>
 </div>
 </div>
 <!-- Q8 -->
@@ -1114,16 +1101,44 @@ Alina<span class="text-accent">Believer</span>
 <p class="error-msg" id="phone-error"><span id="tl-phone-err">Будь ласка, введіть ваш номер телефону</span></p>
 </div>
 <div class="mb-5">
-<label for="plan" class="block text-sm font-medium mb-2" id="tl-plan-label">Мене цікавить *</label>
-<select name="plan" id="plan" class="form-input appearance-none cursor-pointer">
-<option value="" disabled selected>Оберіть пакет</option>
-<option value="Standard — 100€">Standard — 100€</option>
-<option value="Pro — 250€">Pro — 250€</option>
-<option value="Разовий раунд правок — 30€">Разовий раунд правок — 30€</option>
-<option value="Щомісячна підписка — 50€/міс">Щомісячна підписка — 50€/міс</option>
-<option value="Консультація">Безкоштовна консультація</option>
-</select>
-<p class="error-msg" id="plan-error"><span id="tl-plan-err">Оберіть пакет або консультацію</span></p>
+<label class="block text-sm font-medium mb-2"><span id="tl-plan-label">Мене цікавить *</span> <span class="text-muted text-xs font-normal" id="tl-plan-hint">(можна обрати декілька)</span></label>
+<div class="relative" id="plan-group">
+<button type="button" id="plan-btn" onclick="togglePlanDropdown()" class="form-input w-full flex items-center justify-between gap-2 cursor-pointer select-none text-left">
+<span id="plan-btn-text" class="text-sm truncate" style="color:rgba(240,240,245,0.35);">Оберіть варіант(и)</span>
+<svg class="flex-shrink-0 text-muted" id="plan-chevron" style="transition:transform 0.2s ease;" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</button>
+<div id="plan-dropdown" class="hidden absolute top-full left-0 right-0 mt-1 bg-white border border-stone rounded-2xl shadow-lg z-50 overflow-hidden" style="max-height:280px;overflow-y:auto;">
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Standard — 100€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt1">Standard — 100€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Pro — 180€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt2">Pro — 180€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Опція: Поглиблена SEO-оптимізація — 40€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt3">Опція: Поглиблена SEO-оптимізація — 40€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Опція: Поглиблена оптимізація швидкості — 20€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt4">Опція: Поглиблена оптимізація швидкості — 20€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Опція: Підтримка 1 міс (3 правки) — 50€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt5">Опція: Підтримка 1 міс (3 правки) — 50€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Всі 3 опції разом — 80€" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt6">Всі 3 опції разом — 80€</span>
+</label>
+<label class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-stone/60 text-sm transition-colors">
+<input type="checkbox" name="plan" value="Консультація" class="plan-checkbox flex-shrink-0" style="accent-color:#6C63FF;width:16px;height:16px;">
+<span id="tl-plan-opt7">Безкоштовна консультація</span>
+</label>
+</div>
+</div>
+<p class="error-msg" id="plan-error"><span id="tl-plan-err">Оберіть хоча б один варіант</span></p>
 </div>
 <div class="mb-5">
 <label class="block text-sm font-medium mb-2" for="message" id="tl-msg-label">Про ваш бізнес</label>
@@ -1322,22 +1337,7 @@ alinabeliever.digital@gmail.com
 </div>
 </div>
 <script>
-// Make all reveal elements visible immediately — no scroll dependency
-(function(){
-const rv=new IntersectionObserver(function(entries){
-entries.forEach(function(e){
-if(e.isIntersecting){
-e.target.classList.add('visible');
-}else{
-e.target.style.transition='none';
-e.target.classList.remove('visible');
-e.target.offsetHeight;
-e.target.style.transition='';
-}
-});
-},{threshold:0.08,rootMargin:'-30px 0px'});
-document.querySelectorAll('.reveal').forEach(function(el){rv.observe(el);});
-})();const T = {
+const T = {
 uk: {
 nav_services: 'Послуги', nav_process: 'Процес', nav_pricing: 'Тарифи',
 nav_portfolio: 'Портфоліо', nav_faq: 'FAQ', nav_contact: 'Контакт',
@@ -1367,30 +1367,27 @@ pr_label:'— Тарифи',
 pr_h2:'Прозора вартість,<br/>без прихованих платежів',
 pr_sub:'Обирайте пакет, що підходить вашому бізнесу',
 pr_std:'Standard', pr_std_note:'Разова оплата, без абонплати',
-pr_std_f1:'Повна передача прав на сайт та код',
-pr_std_f2:'Підключення вашого домену',
-pr_std_f3:'Хостинг на швидкому сервері',
-pr_std_f4:'Без щомісячної абонплати за платформу',
-pr_std_f5:'Адаптивний дизайн для всіх пристроїв',
-pr_std_f6:'3 раунди правок до публікації сайту',
+pr_std_f1:'Сайт-візитка (до 4-5 секцій)',
+pr_std_f2:'Адаптивний дизайн',
+pr_std_f3:"Форма зв'язку",
+pr_std_f4:'Повна передача прав',
+pr_std_f5:'Підключення домену',
+pr_std_f6:'Швидкий сервер без абонплати',
 pr_std_btn:'Замовити Standard',
 pr_pro:'Pro', pr_pro_note:'Разова оплата, без абонплати', pr_pro_popular:'Популярний',
-pr_pro_f1:'Все з пакету Standard',
-pr_pro_f2:'SEO-оптимізація для Google',
-pr_pro_f4:'1 місяць підписки після запуску (3 раунди правок/міс)',
-pr_pro_f5:'Поглиблена оптимізація швидкості',
+pr_pro_f1:'Багатосторінковий сайт',
+pr_pro_f2:'Каталог / великий прайс',
+pr_pro_f3:'Галерея, команда, кастомна логіка',
+pr_pro_f4:'Все, що входить у Standard',
 pr_pro_btn:'Замовити Pro',
 pr_note:'Не впевнені що обрати? Напишіть — безкоштовно проконсультую та допоможу визначитися.',
-sup_label:'— Після запуску',
-sup_h2:'Сайт запущено — що далі?',
-sup_sub:"Я залишаюсь на зв'язку після здачі проєкту",
-sup1_t:'Разовий раунд правок', sup1_note:'за одну сесію правок',
-sup1_f1:'1 раунд правок за потребою', sup1_f2:'Оновлення тексту, фото, цін',
-sup1_btn:'Замовити правки',
-sup2_t:'Щомісячна підписка', sup2_note:'Скасування будь-коли', sup2_per:'/міс',
-sup2_f1:'3 раунди правок щомісяця', sup2_f2:'Пріоритетна черга',
-sup2_save:'Економія 40€ порівняно з разовими',
-sup2_btn:'Підключити підписку',
+sup_label:'— Опції',
+sup_h2:'Опції до будь-якого тарифу',
+sup_sub:'Додайте будь-яку опцію до пакету Standard або Pro',
+sup1_t:'Поглиблена SEO-оптимізація', sup1_btn:'Додати опцію',
+sup2_t:'Поглиблена оптимізація швидкості', sup2_btn:'Додати опцію',
+sup3_t:'Підтримка 1 міс (3 правки)', sup3_btn:'Додати опцію',
+sup4_t:'Всі 3 опції разом', sup4_save:'економія 30€', sup4_btn:'Замовити опції',
 w_label:'— Чому я',
 w_h2:'Ви не платите<br/>за посередників',
 w_p:'Я — незалежний розробник. Це означає пряму комунікацію, чесну ціну і повну увагу до вашого проєкту. Ніяких агентських накруток і гри в «Зіпсований телефон».',
@@ -1399,14 +1396,14 @@ w2_t:'Швидкі терміни', w2_d:'Типовий сайт готовий
 w3_t:'Уважний підхід', w3_d:'Вникаю в кожен бізнес — не роблю сайти "за шаблоном". Результат — ваш, унікальний.',
 stat1:'1–3', stat1_l:'дні до готового сайту',
 stat2:'100%', stat2_l:'передача прав та доступів',
-stat3:'30', stat3_l:'днів підтримки у Pro',
+stat3:'2', stat3_l:'тарифи під будь-який бізнес',
 stat4:'0€', stat4_l:'щомісячна абонплата за сайт',
 port_label:'— Портфоліо', port_h2:'Приклади робіт', port_sub:'Реальні проєкти у різних нішах',
 port_visit:'Відкрити сайт',
 port_cat1:"Краса та здоров'я", port_t1:'Glow Clinic — Косметологічна клініка',
 port_cat2:'Юридичні послуги', port_t2:'Advocate Kyiv — Адвокатська компанія',
-port_cat3:'Ресторанний бізнес', port_t3:"Crema — Кав'ярня у Львові",
-port_cat4:'Меблевий бізнес', port_t4:'Ficus Mebli — Магазин меблів',
+port_cat3:'Фотографія', port_t3:'Khmarna Photography — Сімейний фотограф',
+port_cat4:'Ресторанний бізнес', port_t4:"Crema — Кав'ярня у Львові",
 port_cat5:"Краса та здоров'я", port_t5:'Nua Laser — Лазерна епіляція',
 cta_label:'— Готові?', cta_h2:'Починаємо вже сьогодні',
 cta_p:"Залиште заявку і я зв'яжуся з вами впродовж кількох годин для безкоштовної консультації.",
@@ -1415,10 +1412,11 @@ con_label:"— Зв'язок", con_h2:'Розкажіть про свій<br/>п
 con_sub:'Залиште заявку сьогодні — отримайте сайт вже за 1–3 дні',
 form_name:"Ваше ім'я *", form_name_err:"Будь ласка, введіть ваше ім'я",
 form_phone:'Телефон *', form_phone_err:'Будь ласка, введіть ваш номер телефону',
-form_plan:'Мене цікавить *', form_plan_ph:'Оберіть пакет',
-form_plan_1:'Standard — 100€', form_plan_2:'Pro — 250€',
-form_plan_3:'Разовий раунд правок — 30€', form_plan_4:'Щомісячна підписка — 50€/міс',
-form_plan_5:'Безкоштовна консультація',
+form_plan:'Мене цікавить *', form_plan_hint:'(можна обрати декілька)', form_plan_ph:'Оберіть варіант(и)',
+form_plan_1:'Standard — 100€', form_plan_2:'Pro — 180€',
+form_plan_3:'Опція: Поглиблена SEO-оптимізація — 40€', form_plan_4:'Опція: Поглиблена оптимізація швидкості — 20€',
+form_plan_5:'Опція: Підтримка 1 міс (3 правки) — 50€', form_plan_6:'Всі 3 опції разом — 80€',
+form_plan_7:'Безкоштовна консультація',
 form_msg:'Про ваш бізнес', form_msg_ph:'Коротко розкажіть про ваш бізнес та що ви хочете отримати від сайту...',
 form_submit:'Надіслати заявку', form_sending:'Надсилаємо...',
 form_disclaimer:"Натискаючи кнопку, ви погоджуєтесь на зв'язок для обговорення вашого проєкту",
@@ -1438,10 +1436,10 @@ faq_q: [
 faq_a: [
 'Достатньо розповісти про свій бізнес, надати логотип (якщо є) та фото. Текст і структуру сайту можу підготувати я.',
 'Так — з моменту, як я отримую матеріали та інформацію про ваш бізнес, починаю роботу, і сайт буде готовий за 1–3 дні.',
-"Так, сайт повністю ваш. За бажанням можна придбати щомісячну підписку на обслуговування, яка включає 3 раунди правок на місяць — але це лише за вашим бажанням, жодних зобов'язань.",
+"Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань.",
 'Ні. Ви платите один раз за розробку. Єдині регулярні витрати — це домен (≈10–15€/рік). Абонплати за платформу — немає.',
 "Це одна сесія зворотного зв'язку з вашого боку: ви надсилаєте всі побажання та зауваження одним списком — я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію.",
-'У пакеті Standard — 3 раунди правок до публікації сайту, у Pro — також 3 до публікації + 3 раунди правок впродовж бонусного місяця підтримки.',
+'Кількість правок узгоджується індивідуально в процесі розробки. Після запуску можна докупити опцію підтримки на 1 місяць (3 правки) за 50€.',
 'Передоплата 30%, решта — після вашого затвердження готового сайту перед публікацією. Оплата на карту або криптовалютою.'
 ],
 foot_tagline:'Сучасні сайти для бізнесу — швидко, якісно і з повною передачею прав.',
@@ -1481,30 +1479,27 @@ pr_label:'— Pricing',
 pr_h2:'Transparent pricing,<br/>no hidden fees',
 pr_sub:'Choose the package that fits your business',
 pr_std:'Standard', pr_std_note:'One-time payment, no subscription',
-pr_std_f1:'Full ownership of site and code',
-pr_std_f2:'Your domain connected',
-pr_std_f3:'Hosting on a fast server',
-pr_std_f4:'No monthly platform fee',
-pr_std_f5:'Responsive design for all devices',
-pr_std_f6:'3 revision rounds before launch',
+pr_std_f1:'One-page website (4-5 sections)',
+pr_std_f2:'Responsive design',
+pr_std_f3:'Contact form',
+pr_std_f4:'Full ownership',
+pr_std_f5:'Domain connected',
+pr_std_f6:'Fast server, no monthly fee',
 pr_std_btn:'Order Standard',
 pr_pro:'Pro', pr_pro_note:'One-time payment, no subscription', pr_pro_popular:'Popular',
-pr_pro_f1:'Everything in Standard',
-pr_pro_f2:'SEO optimization for Google',
-pr_pro_f4:'1 month post-launch subscription (3 revisions/mo)',
-pr_pro_f5:'Advanced speed optimization',
+pr_pro_f1:'Multi-page website',
+pr_pro_f2:'Catalog / extensive price list',
+pr_pro_f3:'Gallery, team, custom logic',
+pr_pro_f4:'Everything in Standard',
 pr_pro_btn:'Order Pro',
 pr_note:'Not sure which to choose? Write to me — free consultation included.',
-sup_label:'— After launch',
-sup_h2:"Site is live — what's next?",
-sup_sub:'I stay in touch after project delivery',
-sup1_t:'One-time revision round', sup1_note:'per session',
-sup1_f1:'1 revision round on demand', sup1_f2:'Text, photo, price updates',
-sup1_btn:'Order revisions',
-sup2_t:'Monthly subscription', sup2_note:'Cancel anytime', sup2_per:'/mo',
-sup2_f1:'3 revision rounds per month', sup2_f2:'Priority queue',
-sup2_save:'Save 40€ vs individual rounds',
-sup2_btn:'Subscribe',
+sup_label:'— Add-ons',
+sup_h2:'Options for any package',
+sup_sub:'Add any option to Standard or Pro',
+sup1_t:'Advanced SEO optimization', sup1_btn:'Add option',
+sup2_t:'Advanced speed optimization', sup2_btn:'Add option',
+sup3_t:'1-month support (3 revisions)', sup3_btn:'Add option',
+sup4_t:'All 3 options bundled', sup4_save:'save 30€', sup4_btn:'Order add-ons',
 w_label:'— Why me',
 w_h2:"You don't pay<br/>for middlemen",
 w_p:"I'm an independent developer. That means direct communication, honest pricing and full attention to your project. No agency markups, no telephone tag.",
@@ -1513,14 +1508,14 @@ w2_t:'Fast turnaround', w2_d:'A typical site is ready in 1–3 days. No unnecess
 w3_t:'Attentive approach', w3_d:'I dive into every business — no cookie-cutter sites. The result is uniquely yours.',
 stat1:'1–3', stat1_l:'days to a finished site',
 stat2:'100%', stat2_l:'ownership & access transfer',
-stat3:'30', stat3_l:'days support in Pro',
+stat3:'2', stat3_l:'plans for any business',
 stat4:'0€', stat4_l:'monthly platform fee',
 port_label:'— Portfolio', port_h2:'Work examples', port_sub:'Real projects in different niches',
 port_visit:'Visit site',
 port_cat1:'Beauty & Health', port_t1:'Glow Clinic — Cosmetology Clinic',
 port_cat2:'Legal Services', port_t2:'Advocate Kyiv — Law Firm',
-port_cat3:'Food & Beverage', port_t3:'Crema — Coffee Shop in Lviv',
-port_cat4:'Furniture', port_t4:'Ficus Mebli — Furniture Store',
+port_cat3:'Photography', port_t3:'Khmarna Photography — Family Photographer',
+port_cat4:'Food & Beverage', port_t4:'Crema — Coffee Shop in Lviv',
 port_cat5:'Beauty & Health', port_t5:'Nua Laser — Laser Hair Removal',
 cta_label:'— Ready?', cta_h2:"Let's start today",
 cta_p:"Leave a request and I'll get back to you within a few hours for a free consultation.",
@@ -1529,10 +1524,11 @@ con_label:'— Contact', con_h2:'Tell me about<br/>your project',
 con_sub:'Leave a request today — get your site in 1–3 days',
 form_name:'Your name *', form_name_err:'Please enter your name',
 form_phone:'Phone *', form_phone_err:'Please enter your phone number',
-form_plan:"I'm interested in *", form_plan_ph:'Choose a package',
-form_plan_1:'Standard — 100€', form_plan_2:'Pro — 250€',
-form_plan_3:'One-time revision — 30€', form_plan_4:'Monthly subscription — 50€/mo',
-form_plan_5:'Free consultation',
+form_plan:"I'm interested in *", form_plan_hint:'(you can select several)', form_plan_ph:'Choose option(s)',
+form_plan_1:'Standard — 100€', form_plan_2:'Pro — 180€',
+form_plan_3:'Option: Advanced SEO optimization — 40€', form_plan_4:'Option: Advanced speed optimization — 20€',
+form_plan_5:'Option: 1-month support (3 revisions) — 50€', form_plan_6:'All 3 options bundled — 80€',
+form_plan_7:'Free consultation',
 form_msg:'About your business', form_msg_ph:'Briefly tell me about your business and what you want from the website...',
 form_submit:'Send request', form_sending:'Sending...',
 form_disclaimer:'By clicking the button, you agree to be contacted to discuss your project',
@@ -1552,10 +1548,10 @@ faq_q: [
 faq_a: [
 'Just tell me about your business, provide a logo (if you have one) and photos. I can prepare the text and site structure myself.',
 'Yes — from the moment I receive your materials and information, I start working, and the site will be ready in 1–3 days.',
-"Yes, the site is completely yours. Optionally you can subscribe to a monthly maintenance plan with 3 revision rounds per month — but it's entirely your choice, no obligations.",
+"Yes, the site is completely yours. Optionally you can add a 1-month support option (3 revisions) for 50€ — but it's entirely your choice, no obligations.",
 'No. You pay once for development. The only recurring cost is the domain (≈10–15€/year). No monthly platform fee.',
 "One revision round is one feedback session from your side: you send all your comments in one list — I implement them. The next round starts after you've reviewed the updated version.",
-'In Standard — 3 revision rounds before launch. In Pro — also 3 before launch + 3 rounds during the bonus support month.',
+'The number of revisions is agreed individually during development. After launch you can add a 1-month support option (3 revisions) for 50€.',
 'A 30% deposit upfront, the rest after you approve the finished site before launch. Payment by card or cryptocurrency.'
 ],
 foot_tagline:'Modern websites for businesses — fast, quality, with full ownership.',
@@ -1635,20 +1631,16 @@ setText('tl-pr-std-btn', t.pr_std_btn);
 setText('tl-pr-pro', t.pr_pro);
 setText('tl-pr-pro-note', t.pr_pro_note);
 setText('tl-pr-pro-popular', t.pr_pro_popular);
-for(let i=1;i<=5;i++) setText('tl-pr-pro-f'+i, t['pr_pro_f'+i]);
+for(let i=1;i<=4;i++) setText('tl-pr-pro-f'+i, t['pr_pro_f'+i]);
 setText('tl-pr-pro-btn', t.pr_pro_btn);
 setText('tl-pr-note', t.pr_note);
 setText('tl-sup-label', t.sup_label);
 setText('tl-sup-h2', t.sup_h2);
 setText('tl-sup-sub', t.sup_sub);
-setText('tl-sup1-t', t.sup1_t); setText('tl-sup1-note', t.sup1_note);
-setText('tl-sup1-f1', t.sup1_f1); setText('tl-sup1-f2', t.sup1_f2);
-setText('tl-sup1-btn', t.sup1_btn);
-setText('tl-sup2-t', t.sup2_t); setText('tl-sup2-note', t.sup2_note);
-setText('tl-sup2-per', t.sup2_per);
-setText('tl-sup2-f1', t.sup2_f1); setText('tl-sup2-f2', t.sup2_f2);
-setText('tl-sup2-save', t.sup2_save);
-setText('tl-sup2-btn', t.sup2_btn);
+setText('tl-sup1-t', t.sup1_t); setText('tl-sup1-btn', t.sup1_btn);
+setText('tl-sup2-t', t.sup2_t); setText('tl-sup2-btn', t.sup2_btn);
+setText('tl-sup3-t', t.sup3_t); setText('tl-sup3-btn', t.sup3_btn);
+setText('tl-sup4-t', t.sup4_t); setText('tl-sup4-save', t.sup4_save); setText('tl-sup4-btn', t.sup4_btn);
 setText('tl-w-label', t.w_label); setText('tl-w-h2', t.w_h2);
 setText('tl-w-p', t.w_p);
 setText('tl-w1t', t.w1_t); setText('tl-w1d', t.w1_d);
@@ -1676,15 +1668,13 @@ setText('tl-name-err', t.form_name_err);
 document.querySelector('label[for="phone"]') && (document.querySelector('label[for="phone"]').textContent = t.form_phone);
 setText('tl-phone-err', t.form_phone_err);
 setText('tl-plan-label', t.form_plan);
+setText('tl-plan-hint', t.form_plan_hint);
 setText('tl-plan-err', t.form_plan_err || '');
-const sel = document.getElementById('plan');
-if(sel) {
-sel.options[0].text = t.form_plan_ph;
-sel.options[1].text = t.form_plan_1;
-sel.options[2].text = t.form_plan_2;
-sel.options[3].text = t.form_plan_3;
-sel.options[4].text = t.form_plan_4;
-sel.options[5].text = t.form_plan_5;
+for(let i=1;i<=7;i++) setText('tl-plan-opt'+i, t['form_plan_'+i]);
+const planBtnText = document.getElementById('plan-btn-text');
+if (planBtnText) {
+planBtnText.dataset.placeholder = t.form_plan_ph;
+if (document.querySelectorAll('input[name="plan"]:checked').length === 0) planBtnText.textContent = t.form_plan_ph;
 }
 const msgLabel = document.querySelector('label[for="message"]');
 if(msgLabel) msgLabel.textContent = t.form_msg;
@@ -1786,14 +1776,15 @@ valid = false;
 phone.classList.remove('error');
 phoneError.classList.remove('show');
 }
-const plan = document.getElementById('plan');
+const planGroup = document.getElementById('plan-group');
+const planChecked = document.querySelectorAll('input[name="plan"]:checked');
 const planError = document.getElementById('plan-error');
-if (!plan.value) {
-plan.classList.add('error');
+if (planChecked.length === 0) {
+planGroup.classList.add('error');
 planError.classList.add('show');
 valid = false;
 } else {
-plan.classList.remove('error');
+planGroup.classList.remove('error');
 planError.classList.remove('show');
 }
 if (!valid) return;
@@ -1828,13 +1819,55 @@ btnIcon.classList.remove('hidden');
 btnLoader.classList.add('hidden');
 }
 });
-['name', 'phone', 'plan'].forEach(id => {
+['name', 'phone'].forEach(id => {
 const el = document.getElementById(id);
 if (el) el.addEventListener('input', () => {
 el.classList.remove('error');
 const err = document.getElementById(id + '-error');
 if (err) err.classList.remove('show');
 });
+});
+document.querySelectorAll('input[name="plan"]').forEach(cb => {
+cb.addEventListener('change', () => {
+document.getElementById('plan-group').classList.remove('error');
+document.getElementById('plan-error').classList.remove('show');
+updatePlanSummary();
+});
+});
+function updatePlanSummary() {
+const btnText = document.getElementById('plan-btn-text');
+if (!btnText) return;
+const checked = Array.from(document.querySelectorAll('input[name="plan"]:checked'));
+if (checked.length === 0) {
+btnText.textContent = btnText.dataset.placeholder || btnText.textContent;
+btnText.style.color = 'rgba(240,240,245,0.35)';
+} else {
+btnText.textContent = checked.map(cb => cb.nextElementSibling.textContent).join(', ');
+btnText.style.color = '#F0F0F5';
+}
+}
+function togglePlanDropdown() {
+const dd = document.getElementById('plan-dropdown');
+const chevron = document.getElementById('plan-chevron');
+const isOpen = !dd.classList.contains('hidden');
+if (isOpen) { closePlanDropdown(); }
+else {
+dd.classList.remove('hidden');
+chevron.style.transform = 'rotate(180deg)';
+}
+}
+function closePlanDropdown() {
+const dd = document.getElementById('plan-dropdown');
+const chevron = document.getElementById('plan-chevron');
+if (dd) dd.classList.add('hidden');
+if (chevron) chevron.style.transform = '';
+}
+document.addEventListener('click', e => {
+const btn = document.getElementById('plan-btn');
+const dd = document.getElementById('plan-dropdown');
+if (btn && dd && !btn.contains(e.target) && !dd.contains(e.target)) {
+closePlanDropdown();
+}
 });
 function openModal(id) {
 const m = document.getElementById(id);
@@ -1853,7 +1886,7 @@ openModal(a.getAttribute('href').slice(1));
 });
 });
 document.addEventListener('keydown', e => {
-if (e.key === 'Escape') { closeModal('privacy'); closeModal('cookies'); }
+if (e.key === 'Escape') { closeModal('privacy'); closeModal('cookies'); closePlanDropdown(); }
 });
 function acceptCookies() {
 localStorage.setItem('cookies_accepted', '1');
@@ -1865,12 +1898,14 @@ document.getElementById('cookie-banner').style.display = 'none';
 }
 // cookie banner disabled
 function selectPlan(value) {
-const select = document.getElementById('plan');
-if (select) {
-select.value = value;
-select.classList.remove('error');
+const checkbox = document.querySelector('input[name="plan"][value="' + CSS.escape(value) + '"]');
+if (checkbox) {
+checkbox.checked = true;
+const group = document.getElementById('plan-group');
+if (group) group.classList.remove('error');
 const err = document.getElementById('plan-error');
 if (err) err.classList.remove('show');
+updatePlanSummary();
 }
 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 }
@@ -2109,7 +2144,7 @@ if(p<1)requestAnimationFrame(step);else el.textContent=target;
 }
 requestAnimationFrame(step);
 }
-const targets={'tl-stat2':'100%','tl-stat3':'30','tl-stat4':'0€'};
+const targets={'tl-stat2':'100%','tl-stat3':'2','tl-stat4':'0€'};
 const io=new IntersectionObserver(entries=>{
 entries.forEach(e=>{
 if(e.isIntersecting){
