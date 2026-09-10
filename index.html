@@ -42,7 +42,9 @@
 <link rel="preload" href="photo.jpg" as="image" fetchpriority="high">
 <link rel="dns-prefetch" href="https://formspree.io">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://www.google.com">
 <link rel="stylesheet" href="style.css" />
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Schema.org structured data -->
 <script type="application/ld+json">
 {
@@ -1121,6 +1123,10 @@ Alina<span class="text-accent">Believer</span>
 <label class="block text-sm font-medium mb-2" for="message" id="tl-msg-label">Про ваш бізнес</label>
 <textarea name="message" id="message" rows="4" class="form-input" placeholder="Коротко розкажіть про ваш бізнес та що ви хочете отримати від сайту..."></textarea>
 </div>
+<div class="mb-5 flex flex-col items-center">
+<div class="g-recaptcha" data-sitekey="6Le7orMtAAAAALcwFcRALYctpXG6ufonzPSoN9vz" data-theme="dark"></div>
+<p class="error-msg" id="recaptcha-error"><span id="tl-recaptcha-err">Підтвердіть, будь ласка, що ви не робот</span></p>
+</div>
 <!-- Formspree hidden field -->
 <input type="hidden" name="_subject" value="Нова заявка з сайту AlinaBeliever" />
 <input type="text" name="_gotcha" style="display:none" />
@@ -1398,6 +1404,7 @@ form_msg:'Про ваш бізнес', form_msg_ph:'Коротко розкаж�
 form_submit:'Надіслати заявку', form_sending:'Надсилаємо...',
 form_disclaimer:"Натискаючи кнопку, ви погоджуєтесь на зв'язок для обговорення вашого проєкту",
 form_submit_err:"Не вдалося надіслати заявку. Спробуйте ще раз або напишіть напряму в Telegram чи WhatsApp.",
+form_recaptcha_err:"Підтвердіть, будь ласка, що ви не робот",
 form_success_t:'Заявку отримано!', form_success_p:"Я зв'яжуся з вами найближчим часом. Дякую!",
 tg_btn:'Написати в Telegram', ig_btn:'Написати в Instagram', email_btn:'alinabeliever.digital@gmail.com',
 wa_btn:'Написати в WhatsApp',
@@ -1510,6 +1517,7 @@ form_msg:'About your business', form_msg_ph:'Briefly tell me about your business
 form_submit:'Send request', form_sending:'Sending...',
 form_disclaimer:'By clicking the button, you agree to be contacted to discuss your project',
 form_submit_err:'Failed to send your request. Please try again or message us directly on Telegram or WhatsApp.',
+form_recaptcha_err:'Please confirm you are not a robot',
 form_success_t:'Request received!', form_success_p:"I'll get back to you soon. Thank you!",
 tg_btn:'Message on Telegram', ig_btn:'Message on Instagram', email_btn:'alinabeliever.digital@gmail.com',
 wa_btn:'Message on WhatsApp',
@@ -1661,6 +1669,7 @@ if(msgArea) msgArea.placeholder = t.form_msg_ph;
 setText('tl-submit', t.form_submit);
 setText('tl-disclaimer', t.form_disclaimer);
 setText('tl-submit-err', t.form_submit_err);
+setText('tl-recaptcha-err', t.form_recaptcha_err);
 setText('tl-success-t', t.form_success_t);
 setText('tl-success-p', t.form_success_p);
 setText('tl-ig-btn', t.ig_btn);
@@ -1736,6 +1745,7 @@ const formLoadTime = Date.now();
 form.addEventListener('submit', async (e) => {
 e.preventDefault();
 document.getElementById('submit-error').classList.remove('show');
+document.getElementById('recaptcha-error').classList.remove('show');
 let valid = true;
 const name = document.getElementById('name');
 const nameError = document.getElementById('name-error');
@@ -1776,6 +1786,10 @@ form.style.display = 'none';
 document.getElementById('success-banner').classList.add('show');
 return;
 }
+if (typeof grecaptcha === 'undefined' || !grecaptcha.getResponse()) {
+document.getElementById('recaptcha-error').classList.add('show');
+return;
+}
 const btn = document.getElementById('submit-btn');
 const btnText = document.getElementById('btn-text');
 const btnIcon = document.getElementById('btn-icon');
@@ -1799,6 +1813,7 @@ throw new Error('Server error');
 }
 } catch (err) {
 document.getElementById('submit-error').classList.add('show');
+if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
 } finally {
 btn.disabled = false;
 btnText.textContent = 'Надіслати заявку';
