@@ -1,0 +1,116 @@
+# Налаштування Pages CMS (pagescms.org) для сайту AlinaBeliever.
+# Тут можна редагувати ціни та галерею портфоліо без доступу до коду.
+#
+# ПРИМІТКА: якщо після підключення репозиторію на pagescms.org якесь поле
+# підсвічується як помилка конфігурації — це означає, що назва якогось
+# технічного параметра (options/media тощо) трохи відрізняється у поточній
+# версії Pages CMS. Сама структура (які поля є і що вони роблять) залишиться
+# такою ж, виправити потрібно буде тільки назву параметра.
+
+media:
+  input: src/images/gallery
+  output: /images/gallery
+
+content:
+  - name: prices
+    label: "Ціни"
+    type: file
+    path: data/prices.json
+    format: json
+    fields:
+      - name: standard
+        label: "Тариф Standard"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва тарифу (українською)", type: string }
+          - { name: name_en, label: "Назва тарифу (англійською)", type: string }
+          - { name: description_uk, label: "Короткий підпис під ціною (українською)", type: string }
+          - { name: description_en, label: "Короткий підпис під ціною (англійською)", type: string }
+      - name: pro
+        label: "Тариф Pro"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва тарифу (українською)", type: string }
+          - { name: name_en, label: "Назва тарифу (англійською)", type: string }
+          - { name: description_uk, label: "Короткий підпис під ціною (українською)", type: string }
+          - { name: description_en, label: "Короткий підпис під ціною (англійською)", type: string }
+      - name: seo
+        label: "Опція: Поглиблена SEO-оптимізація"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва опції (українською)", type: string }
+          - { name: name_en, label: "Назва опції (англійською)", type: string }
+          - { name: description_uk, label: "Короткий підпис під ціною (українською, можна залишити порожнім)", type: string, required: false }
+          - { name: description_en, label: "Короткий підпис під ціною (англійською, можна залишити порожнім)", type: string, required: false }
+      - name: speed
+        label: "Опція: Поглиблена оптимізація швидкості"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва опції (українською)", type: string }
+          - { name: name_en, label: "Назва опції (англійською)", type: string }
+          - { name: description_uk, label: "Короткий підпис під ціною (українською, можна залишити порожнім)", type: string, required: false }
+          - { name: description_en, label: "Короткий підпис під ціною (англійською, можна залишити порожнім)", type: string, required: false }
+      - name: support
+        label: "Опція: Підтримка 1 місяць (3 правки)"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва опції (українською)", type: string }
+          - { name: name_en, label: "Назва опції (англійською)", type: string }
+          - { name: description_uk, label: "Короткий підпис під ціною (українською, можна залишити порожнім)", type: string, required: false }
+          - { name: description_en, label: "Короткий підпис під ціною (англійською, можна залишити порожнім)", type: string, required: false }
+      - name: bundle
+        label: "Пакет: Всі 3 опції разом"
+        type: object
+        fields:
+          - { name: price, label: "Ціна (число, в євро, без символу €)", type: number }
+          - { name: name_uk, label: "Назва пакету (українською)", type: string }
+          - { name: name_en, label: "Назва пакету (англійською)", type: string }
+          - { name: description_uk, label: "Напис про економію, напр. «економія 30€» (українською)", type: string }
+          - { name: description_en, label: "Напис про економію, напр. «save 30€» (англійською)", type: string }
+
+  - name: gallery
+    label: "Галерея (Портфоліо)"
+    type: collection
+    path: data/gallery.json
+    format: json
+    fields:
+      - name: id
+        label: "Технічний ідентифікатор (латиницею, без пробілів, напр. my-project)"
+        type: string
+      - name: image
+        label: "Фото (скріншот сайту)"
+        type: image
+        required: true
+      - name: alt_uk
+        label: "Опис фото для пошукових систем і незрячих відвідувачів (українською)"
+        type: string
+        required: true
+      - name: alt_en
+        label: "Опис фото для пошукових систем і незрячих відвідувачів (англійською)"
+        type: string
+        required: true
+      - name: category_uk
+        label: "Категорія / сфера бізнесу (українською)"
+        type: string
+        required: true
+      - name: category_en
+        label: "Категорія / сфера бізнесу (англійською)"
+        type: string
+        required: true
+      - name: title_uk
+        label: "Назва проєкту (українською)"
+        type: string
+        required: true
+      - name: title_en
+        label: "Назва проєкту (англійською)"
+        type: string
+        required: true
+      - name: link
+        label: "Посилання на сайт проєкту"
+        type: string
+        required: true

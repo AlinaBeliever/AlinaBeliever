@@ -1,0 +1,38 @@
+{
+  "standard": {
+    "price": 100,
+    "name_uk": "Standard",
+    "name_en": "Standard",
+    "description_uk": "Разова оплата, без абонплати",
+    "description_en": "One-time payment, no subscription"
+  },
+  "pro": {
+    "price": 180,
+    "name_uk": "Pro",
+    "name_en": "Pro",
+    "description_uk": "Разова оплата, без абонплати",
+    "description_en": "One-time payment, no subscription"
+  },
+  "seo": {
+    "price": 40,
+    "name_uk": "Поглиблена SEO-оптимізація",
+    "name_en": "Advanced SEO optimization"
+  },
+  "speed": {
+    "price": 20,
+    "name_uk": "Поглиблена оптимізація швидкості",
+    "name_en": "Advanced speed optimization"
+  },
+  "support": {
+    "price": 50,
+    "name_uk": "Підтримка 1 міс (3 правки)",
+    "name_en": "1-month support (3 revisions)"
+  },
+  "bundle": {
+    "price": 80,
+    "name_uk": "Всі 3 опції разом",
+    "name_en": "All 3 options bundled",
+    "description_uk": "економія 30€",
+    "description_en": "save 30€"
+  }
+}
