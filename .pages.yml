@@ -75,42 +75,48 @@ content:
 
   - name: gallery
     label: "Галерея (Портфоліо)"
-    type: collection
+    type: file
     path: data/gallery.json
     format: json
     fields:
-      - name: id
-        label: "Технічний ідентифікатор (латиницею, без пробілів, напр. my-project)"
-        type: string
-      - name: image
-        label: "Фото (скріншот сайту)"
-        type: image
-        required: true
-      - name: alt_uk
-        label: "Опис фото для пошукових систем і незрячих відвідувачів (українською)"
-        type: string
-        required: true
-      - name: alt_en
-        label: "Опис фото для пошукових систем і незрячих відвідувачів (англійською)"
-        type: string
-        required: true
-      - name: category_uk
-        label: "Категорія / сфера бізнесу (українською)"
-        type: string
-        required: true
-      - name: category_en
-        label: "Категорія / сфера бізнесу (англійською)"
-        type: string
-        required: true
-      - name: title_uk
-        label: "Назва проєкту (українською)"
-        type: string
-        required: true
-      - name: title_en
-        label: "Назва проєкту (англійською)"
-        type: string
-        required: true
-      - name: link
-        label: "Посилання на сайт проєкту"
-        type: string
-        required: true
+      - name: items
+        label: "Роботи в портфоліо"
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: "Технічний ідентифікатор (латиницею, без пробілів, напр. my-project)"
+            type: string
+            required: true
+          - name: image
+            label: "Фото (скріншот сайту)"
+            type: image
+            required: true
+          - name: alt_uk
+            label: "Опис фото для пошукових систем і незрячих відвідувачів (українською)"
+            type: string
+            required: true
+          - name: alt_en
+            label: "Опис фото для пошукових систем і незрячих відвідувачів (англійською)"
+            type: string
+            required: true
+          - name: category_uk
+            label: "Категорія / сфера бізнесу (українською)"
+            type: string
+            required: true
+          - name: category_en
+            label: "Категорія / сфера бізнесу (англійською)"
+            type: string
+            required: true
+          - name: title_uk
+            label: "Назва проєкту (українською)"
+            type: string
+            required: true
+          - name: title_en
+            label: "Назва проєкту (англійською)"
+            type: string
+            required: true
+          - name: link
+            label: "Посилання на сайт проєкту"
+            type: string
+            required: true
