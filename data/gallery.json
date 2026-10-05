@@ -1,0 +1,46 @@
+[
+  {
+    "id": "glow-clinic",
+    "image": "images/gallery/glowclinic.png",
+    "alt_uk": "Скріншот сайту косметологічної клініки Glow Clinic",
+    "alt_en": "Screenshot of the Glow Clinic cosmetology website",
+    "category_uk": "Краса та здоров'я",
+    "category_en": "Beauty & Health",
+    "title_uk": "Glow Clinic — Косметологічна клініка",
+    "title_en": "Glow Clinic — Cosmetology Clinic",
+    "link": "https://alinabeliever.github.io/Glow-Clinic/"
+  },
+  {
+    "id": "advocate-kyiv",
+    "image": "images/gallery/advocateportfolio.png",
+    "alt_uk": "Скріншот сайту адвокатської компанії Advocate Kyiv",
+    "alt_en": "Screenshot of the Advocate Kyiv law firm website",
+    "category_uk": "Юридичні послуги",
+    "category_en": "Legal Services",
+    "title_uk": "Advocate Kyiv — Адвокатська компанія",
+    "title_en": "Advocate Kyiv — Law Firm",
+    "link": "https://alinabeliever.github.io/Advocate-Kyiv/"
+  },
+  {
+    "id": "khmarna-photography",
+    "image": "images/gallery/khmarna.png",
+    "alt_uk": "Скріншот сайту фотографа Khmarna Photography",
+    "alt_en": "Screenshot of the Khmarna Photography website",
+    "category_uk": "Фотографія",
+    "category_en": "Photography",
+    "title_uk": "Khmarna Photography — Сімейний фотограф",
+    "title_en": "Khmarna Photography — Family Photographer",
+    "link": "https://khmarnaphotography.com"
+  },
+  {
+    "id": "crema-cafe",
+    "image": "images/gallery/cremacafe.png",
+    "alt_uk": "Скріншот сайту кав'ярні Crema у Львові",
+    "alt_en": "Screenshot of the Crema coffee shop website in Lviv",
+    "category_uk": "Ресторанний бізнес",
+    "category_en": "Food & Beverage",
+    "title_uk": "Crema — Кав'ярня у Львові",
+    "title_en": "Crema — Coffee Shop in Lviv",
+    "link": "https://alinabeliever.github.io/crema_cafe/"
+  }
+]
