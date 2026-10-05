@@ -10,7 +10,9 @@ const DIST = path.join(ROOT, 'dist');
 const DATA = path.join(ROOT, 'data');
 
 const prices = JSON.parse(fs.readFileSync(path.join(DATA, 'prices.json'), 'utf8'));
-const gallery = JSON.parse(fs.readFileSync(path.join(DATA, 'gallery.json'), 'utf8'));
+// gallery.json is a { items: [...] } object (not a bare array) — Pages CMS edits
+// a "file" content type with one repeatable ("list") field, which needs a root key.
+const gallery = JSON.parse(fs.readFileSync(path.join(DATA, 'gallery.json'), 'utf8')).items;
 
 let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf8');
 
