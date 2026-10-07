@@ -130,7 +130,7 @@ content:
       - name: photos
         label: "Скріншоти відгуків (можна завантажити декілька одразу)"
         type: image
-        multiple: true
+        list: true
         media:
           input: src/images/reviews
           output: /images/reviews
