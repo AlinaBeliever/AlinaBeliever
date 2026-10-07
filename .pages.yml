@@ -120,3 +120,17 @@ content:
             label: "Посилання на сайт проєкту"
             type: string
             required: true
+
+  - name: reviews
+    label: "Відгуки"
+    type: file
+    path: data/reviews.json
+    format: json
+    fields:
+      - name: photos
+        label: "Скріншоти відгуків (можна завантажити декілька одразу)"
+        type: image
+        list: true
+        media:
+          input: src/images/reviews
+          output: /images/reviews

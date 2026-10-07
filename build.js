@@ -173,7 +173,32 @@ html = replaceCssMarker(html, 'GALLERY_COUNT', n);
 const zIndexCss = Array.from({ length: n }, (_, i) => '.port-stack-item:nth-child(' + (i + 1) + '){z-index:' + (i + 1) + ';}').join('\n');
 html = replaceCssBlockMarker(html, 'GALLERY_ZINDEX', zIndexCss);
 
-// ---------- 3. Write dist/ ----------
+// ---------- 3. Reviews ----------
+// Entirely optional: if there are no review photos yet, the whole section
+// and its nav links are removed from the page rather than shown empty.
+
+const reviews = JSON.parse(fs.readFileSync(path.join(DATA, 'reviews.json'), 'utf8')).photos || [];
+
+function reviewItemHtml(src, index) {
+  const altUk = 'Відгук клієнта ' + (index + 1);
+  const altEn = 'Client review ' + (index + 1);
+  return '<a href="javascript:void(0)" class="reviews-item" onclick="openLightbox(\'' + escapeHtml(src) + '\',\'' + altUk.replace(/'/g, "\\'") + '\')"><img src="' + escapeHtml(src) + '" alt="' + escapeHtml(altUk) + '" data-alt-uk="' + escapeHtml(altUk) + '" data-alt-en="' + escapeHtml(altEn) + '" loading="lazy"></a>';
+}
+
+if (reviews.length > 0) {
+  const reviewsHtml = reviews.map(reviewItemHtml).join('\n');
+  html = replaceBlockMarker(html, 'REVIEWS_SECTION', '<!-- REVIEWS -->\n<section id="reviews" class="py-24 md:py-32 px-6 max-w-6xl mx-auto">\n<div class="text-center mb-16">\n<p class="section-label reveal"><span id="tl-rev-label">— Відгуки</span></p>\n<h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight reveal reveal-delay-1"><span id="tl-rev-h2">Що кажуть клієнти</span></h2>\n</div>\n<div class="reviews-grid reveal">\n' + reviewsHtml + '\n</div>\n</section>\n<hr class="divider max-w-6xl mx-auto" />');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_DESKTOP', '<a href="#reviews" class="nav-link"><span id="tl-nav-reviews">Відгуки</span></a>');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_MOBILE', '<a href="#reviews" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-reviews">Відгуки</span></a>');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_FOOTER', '<a href="#reviews" class="nav-link text-sm"><span id="tl-foot-link-reviews">Відгуки</span></a>');
+} else {
+  html = replaceBlockMarker(html, 'REVIEWS_SECTION', '');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_DESKTOP', '');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_MOBILE', '');
+  html = replaceBlockMarker(html, 'REVIEWS_NAV_FOOTER', '');
+}
+
+// ---------- 4. Write dist/ ----------
 
 function copyRecursive(srcDir, destDir) {
   fs.mkdirSync(destDir, { recursive: true });
@@ -196,4 +221,4 @@ copyRecursive(SRC, DIST);
 // overwrite index.html with the merged version
 fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf8');
 
-console.log('Build complete: dist/ written (' + n + ' gallery items, ' + Object.keys(prices).length + ' price entries).');
+console.log('Build complete: dist/ written (' + n + ' gallery items, ' + Object.keys(prices).length + ' price entries, ' + reviews.length + ' review photos).');
