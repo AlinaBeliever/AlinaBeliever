@@ -100,14 +100,6 @@
 },
 {
 "@type": "Question",
-"name": "Що відбувається після запуску — сайт залишається моїм?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань."
-}
-},
-{
-"@type": "Question",
 "name": "Чи потрібно мені платити щомісяця за сайт?",
 "acceptedAnswer": {
 "@type": "Answer",
@@ -116,10 +108,10 @@
 },
 {
 "@type": "Question",
-"name": "Що таке один раунд правок?",
+"name": "Скільки раундів правок включено і що таке раунд правок?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Це одна сесія зворотного зв'язку з вашого боку: ви надсилаєте всі побажання та зауваження одним списком — я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію."
+"text": "У вартість включено 3 раунди правок. Один раунд — це коли ви надсилаєте всі побажання та зауваження одним списком, а я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію."
 }
 },
 {
@@ -383,28 +375,29 @@ select.form-input option{background:#011635;color:#FFFFFF;}
 <a href="#" class="font-display text-xl font-semibold tracking-tight text-ink">
 Alina<span class="text-accent">Believer</span>
 </a>
-<div class="hidden md:flex items-center gap-8">
+<div class="hidden lg:flex items-center gap-6 xl:gap-8">
 <a href="#services" class="nav-link"><span id="tl-nav-services">Послуги</span></a>
 <a href="#process" class="nav-link"><span id="tl-nav-process">Процес</span></a>
 <a href="#pricing" class="nav-link"><span id="tl-nav-pricing">Тарифи</span></a>
 <a href="#portfolio" class="nav-link"><span id="tl-nav-portfolio">Портфоліо</span></a>
+<a href="#reviews" class="nav-link"><span id="tl-nav-reviews">Відгуки</span></a>
 <a href="#faq" class="nav-link"><span id="tl-nav-faq">FAQ</span></a>
 <a href="#contact" class="nav-link"><span id="tl-nav-contact">Контакт</span></a>
 </div>
 <!-- Lang switcher -->
-<div class="hidden md:flex items-center gap-1 mr-2">
+<div class="hidden lg:flex items-center gap-1 mr-2">
 <button onclick="setLang('uk')" id="btn-uk" class="lang-btn active-lang" aria-label="Українська">UA</button>
 <span class="text-muted" style="font-size:12px;">|</span>
 <button onclick="setLang('en')" id="btn-en" class="lang-btn" aria-label="English">EN</button>
 </div>
-<a href="#contact" class="hidden md:inline-flex btn-primary py-3 px-6 text-sm">
+<a href="#contact" class="hidden lg:inline-flex btn-primary py-3 px-6 text-sm">
 <span id="tl-nav-cta">Замовити сайт</span> <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
 </a>
-<div class="flex md:hidden items-center gap-0 mr-2 rounded-full" style="padding:2px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);">
+<div class="flex lg:hidden items-center gap-0 mr-2 rounded-full" style="padding:2px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);">
 <button onclick="setLang('uk')" id="btn-uk-nav" class="lang-btn active-lang" aria-label="Українська" style="padding:5px 9px;font-size:11px;">UA</button>
 <button onclick="setLang('en')" id="btn-en-nav" class="lang-btn" aria-label="English" style="padding:5px 9px;font-size:11px;">EN</button>
 </div>
-<button id="burger" class="md:hidden p-2" onclick="toggleMenu()">
+<button id="burger" class="lg:hidden p-2" onclick="toggleMenu()">
 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
 </button>
 </nav>
@@ -414,6 +407,7 @@ Alina<span class="text-accent">Believer</span>
 <a href="#process" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-process">Процес</span></a>
 <a href="#pricing" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-pricing">Тарифи</span></a>
 <a href="#portfolio" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-portfolio">Портфоліо</span></a>
+<a href="#reviews" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-reviews">Відгуки</span></a>
 <a href="#faq" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-faq">FAQ</span></a>
 <a href="#contact" onclick="toggleMenu()" class="text-2xl font-display font-medium py-3 border-b border-ink/10 block"><span id="tl-mob-contact">Контакт</span></a>
 <div class="flex items-center gap-3 py-3">
@@ -923,18 +917,6 @@ Alina<span class="text-accent">Believer</span>
 <p class="px-7 pb-6 text-muted leading-relaxed">Так — з моменту, як я отримую матеріали та інформацію про ваш бізнес, починаю роботу, і сайт буде готовий до 5 днів.</p>
 </div>
 </div>
-<!-- Q3 -->
-<div class="faq-item bg-white rounded-2xl border border-ink/5 overflow-hidden cursor-pointer select-none" onclick="toggleFaq(this)" role="button" aria-expanded="false">
-<div class="flex items-center justify-between gap-4 px-7 py-5">
-<span class="font-medium">Що відбувається після запуску — сайт залишається моїм?</span>
-<span class="faq-icon flex-shrink-0 w-7 h-7 rounded-full bg-stone flex items-center justify-center transition-transform duration-300">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-</span>
-</div>
-<div class="faq-answer overflow-hidden" style="max-height:0; transition: max-height 0.35s ease, padding 0.35s ease;">
-<p class="px-7 pb-6 text-muted leading-relaxed">Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань.</p>
-</div>
-</div>
 <!-- Q4 -->
 <div class="faq-item bg-white rounded-2xl border border-ink/5 overflow-hidden cursor-pointer select-none" onclick="toggleFaq(this)" role="button" aria-expanded="false">
 <div class="flex items-center justify-between gap-4 px-7 py-5">
@@ -950,25 +932,13 @@ Alina<span class="text-accent">Believer</span>
 <!-- Q5 -->
 <div class="faq-item bg-white rounded-2xl border border-ink/5 overflow-hidden cursor-pointer select-none" onclick="toggleFaq(this)" role="button" aria-expanded="false">
 <div class="flex items-center justify-between gap-4 px-7 py-5">
-<span class="font-medium">Що таке один раунд правок?</span>
+<span class="font-medium">Скільки раундів правок включено і що таке раунд правок?</span>
 <span class="faq-icon flex-shrink-0 w-7 h-7 rounded-full bg-stone flex items-center justify-center transition-transform duration-300">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
 </span>
 </div>
 <div class="faq-answer overflow-hidden" style="max-height:0; transition: max-height 0.35s ease, padding 0.35s ease;">
-<p class="px-7 pb-6 text-muted leading-relaxed">Це одна сесія зворотного зв'язку з вашого боку: ви надсилаєте всі побажання та зауваження одним списком — я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію.</p>
-</div>
-</div>
-<!-- Q6 -->
-<div class="faq-item bg-white rounded-2xl border border-ink/5 overflow-hidden cursor-pointer select-none" onclick="toggleFaq(this)" role="button" aria-expanded="false">
-<div class="flex items-center justify-between gap-4 px-7 py-5">
-<span class="font-medium">Скільки правок я можу зробити до запуску?</span>
-<span class="faq-icon flex-shrink-0 w-7 h-7 rounded-full bg-stone flex items-center justify-center transition-transform duration-300">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-</span>
-</div>
-<div class="faq-answer overflow-hidden" style="max-height:0; transition: max-height 0.35s ease, padding 0.35s ease;">
-<p class="px-7 pb-6 text-muted leading-relaxed">У вартість включено 3 раунди правок. Після запуску можна докупити опцію підтримки на 1 місяць (3 правки) за 50€.</p>
+<p class="px-7 pb-6 text-muted leading-relaxed">У вартість включено 3 раунди правок. Один раунд — це коли ви надсилаєте всі побажання та зауваження одним списком, а я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію.</p>
 </div>
 </div>
 <!-- Q8 -->
@@ -1193,6 +1163,7 @@ alinabeliever.digital@gmail.com
 <a href="#process" class="nav-link text-sm"><span id="tl-foot-link-process">Процес</span></a>
 <a href="#pricing" class="nav-link text-sm"><span id="tl-foot-link-pricing">Тарифи</span></a>
 <a href="#portfolio" class="nav-link text-sm"><span id="tl-foot-link-portfolio">Портфоліо</span></a>
+<a href="#reviews" class="nav-link text-sm"><span id="tl-foot-link-reviews">Відгуки</span></a>
 <a href="#faq" class="nav-link text-sm">FAQ</a>
 <a href="#contact" class="nav-link text-sm"><span id="tl-foot-link-contact">Контакт</span></a>
 </div>
@@ -1285,7 +1256,7 @@ const T = {
 uk: {
 /*BUILD:I18N_UK_START*/
 nav_services: 'Послуги', nav_process: 'Процес', nav_pricing: 'Тарифи',
-nav_portfolio: 'Портфоліо', nav_faq: 'FAQ', nav_contact: 'Контакт',
+nav_portfolio: 'Портфоліо', nav_reviews: 'Відгуки', nav_faq: 'FAQ', nav_contact: 'Контакт',
 nav_cta: 'Замовити сайт',
 hero_tag: 'Сайти для малого та середнього бізнесу',
 hero_h1a: 'Сайт для вашого бізнесу', hero_h1b: 'за 5 днів', hero_h1c: '— без шаблонів і абонплати',
@@ -1375,22 +1346,18 @@ tg_btn:'Написати в Telegram', ig_btn:'Написати в Instagram', e
 wa_btn:'Написати в WhatsApp',
 faq_label:'— Питання', faq_h2:'Часті запитання',
 faq_q: [
-'Що мені потрібно підготувати перед початком роботи?',
-'Чи справді сайт буде готовий до 5 днів?',
-'Що відбувається після запуску — сайт залишається моїм?',
-'Чи потрібно мені платити щомісяця за сайт?',
-'Що таке один раунд правок?',
-'Скільки правок я можу зробити до запуску?',
-'Як відбувається оплата?'
+"Що мені потрібно підготувати перед початком роботи?",
+"Чи справді сайт буде готовий до 5 днів?",
+"Чи потрібно мені платити щомісяця за сайт?",
+"Скільки раундів правок включено і що таке раунд правок?",
+"Як відбувається оплата?"
 ],
 faq_a: [
-'Достатньо розповісти про свій бізнес, надати логотип (якщо є) та фото. Текст і структуру сайту можу підготувати я.',
-'Так — з моменту, як я отримую матеріали та інформацію про ваш бізнес, починаю роботу, і сайт буде готовий до 5 днів.',
-"Так, сайт повністю ваш. За бажанням можна додати опцію підтримки на 1 місяць (3 правки) за 50€ — але це не обов'язково, жодних зобов'язань.",
-'Ні. Ви платите один раз за розробку. Єдині регулярні витрати — це домен (≈10–15€/рік). Абонплати за платформу — немає.',
-"Це одна сесія зворотного зв'язку з вашого боку: ви надсилаєте всі побажання та зауваження одним списком — я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію.",
-'У вартість включено 3 раунди правок. Після запуску можна докупити опцію підтримки на 1 місяць (3 правки) за 50€.',
-'Передоплата 30%, решта — після вашого затвердження готового сайту перед публікацією. Оплата на карту або криптовалютою.'
+"Достатньо розповісти про свій бізнес, надати логотип (якщо є) та фото. Текст і структуру сайту можу підготувати я.",
+"Так — з моменту, як я отримую матеріали та інформацію про ваш бізнес, починаю роботу, і сайт буде готовий до 5 днів.",
+"Ні. Ви платите один раз за розробку. Єдині регулярні витрати — це домен (≈10–15€/рік). Абонплати за платформу — немає.",
+"У вартість включено 3 раунди правок. Один раунд — це коли ви надсилаєте всі побажання та зауваження одним списком, а я їх вношу. Наступний раунд починається після того, як ви переглянули оновлену версію.",
+"Передоплата 30%, решта — після вашого затвердження готового сайту перед публікацією. Оплата на карту або криптовалютою."
 ],
 foot_tagline:'Сучасні сайти для бізнесу — швидко, якісно і з повною передачею прав.',
 foot_nav:'Навігація', foot_legal:'Правова інформація',
@@ -1404,7 +1371,7 @@ cookies_body:`<p>Цей сайт використовує мінімальну �
 en: {
 /*BUILD:I18N_EN_START*/
 nav_services:'Services', nav_process:'Process', nav_pricing:'Pricing',
-nav_portfolio:'Portfolio', nav_faq:'FAQ', nav_contact:'Contact',
+nav_portfolio:'Portfolio', nav_reviews:'Reviews', nav_faq:'FAQ', nav_contact:'Contact',
 nav_cta:'Order a Website',
 hero_tag:'Websites for small & medium businesses',
 hero_h1a:'A website for your business', hero_h1b:'in 5 days', hero_h1c:'— no templates, no subscription',
@@ -1494,22 +1461,18 @@ tg_btn:'Message on Telegram', ig_btn:'Message on Instagram', email_btn:'alinabel
 wa_btn:'Message on WhatsApp',
 faq_label:'— Questions', faq_h2:'Frequently Asked Questions',
 faq_q: [
-'What do I need to prepare before we start?',
-'Will the site really be ready in up to 5 days?',
-'After launch — does the site stay mine?',
-'Do I need to pay monthly for the site?',
-'What is one revision round?',
-'How many revisions can I make before launch?',
-'How does payment work?'
+"What do I need to prepare before we start?",
+"Will the site really be ready in up to 5 days?",
+"Do I need to pay monthly for the site?",
+"How many revision rounds are included, and what is a round?",
+"How does payment work?"
 ],
 faq_a: [
-'Just tell me about your business, provide a logo (if you have one) and photos. I can prepare the text and site structure myself.',
-'Yes — from the moment I receive your materials and information, I start working, and the site will be ready in up to 5 days.',
-"Yes, the site is completely yours. Optionally you can add a 1-month support option (3 revisions) for 50€ — but it's entirely your choice, no obligations.",
-'No. You pay once for development. The only recurring cost is the domain (≈10–15€/year). No monthly platform fee.',
-"One revision round is one feedback session from your side: you send all your comments in one list — I implement them. The next round starts after you've reviewed the updated version.",
-'3 revision rounds are included in the price. After launch you can add a 1-month support option (3 revisions) for 50€.',
-'A 30% deposit upfront, the rest after you approve the finished site before launch. Payment by card or cryptocurrency.'
+"Just tell me about your business, provide a logo (if you have one) and photos. I can prepare the text and site structure myself.",
+"Yes — from the moment I receive your materials and information, I start working, and the site will be ready in up to 5 days.",
+"No. You pay once for development. The only recurring cost is the domain (≈10–15€/year). No monthly platform fee.",
+"3 revision rounds are included in the price. One round means you send all your comments in one list and I implement them. The next round starts after you've reviewed the updated version.",
+"A 30% deposit upfront, the rest after you approve the finished site before launch. Payment by card or cryptocurrency."
 ],
 foot_tagline:'Modern websites for businesses — fast, quality, with full ownership.',
 foot_nav:'Navigation', foot_legal:'Legal',
@@ -1546,6 +1509,7 @@ setText('tl-nav-services', t.nav_services);
 setText('tl-nav-process', t.nav_process);
 setText('tl-nav-pricing', t.nav_pricing);
 setText('tl-nav-portfolio', t.nav_portfolio);
+setText('tl-nav-reviews', t.nav_reviews);
 setText('tl-nav-faq', t.nav_faq);
 setText('tl-nav-contact', t.nav_contact);
 setText('tl-nav-cta', t.nav_cta);
@@ -1553,6 +1517,7 @@ setText('tl-mob-services', t.nav_services);
 setText('tl-mob-process', t.nav_process);
 setText('tl-mob-pricing', t.nav_pricing);
 setText('tl-mob-portfolio', t.nav_portfolio);
+setText('tl-mob-reviews', t.nav_reviews);
 setText('tl-mob-faq', t.nav_faq);
 setText('tl-mob-contact', t.nav_contact);
 setText('tl-mob-cta', t.nav_cta);
@@ -1668,6 +1633,7 @@ setText('tl-foot-link-services', t.nav_services);
 setText('tl-foot-link-process', t.nav_process);
 setText('tl-foot-link-pricing', t.nav_pricing);
 setText('tl-foot-link-portfolio', t.nav_portfolio);
+setText('tl-foot-link-reviews', t.nav_reviews);
 setText('tl-foot-link-contact', t.nav_contact);
 setText('privacy-body', t.privacy_body);
 setText('cookies-body', t.cookies_body);
