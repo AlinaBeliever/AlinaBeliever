@@ -101,13 +101,16 @@ html = replaceHtmlMarker(html, 'SCHEMA_PRICE_PRO', prices.pro.price);
 // 1b. static (Ukrainian, default-rendered) amounts / names / descriptions + checkbox values + onclick args
 for (const meta of PRICE_META) {
   const item = prices[meta.id];
+  const labelUk = composeLabel(meta, item, 'uk');
+  html = setAttrById(html, meta.cbId, 'value', labelUk);
+  // Add-on/bundle cards are optional on the page (the options section may be
+  // removed) — the form checkbox above is the only required element for them.
+  if (meta.kind !== 'plan' && !html.includes('id="' + meta.ampSpanId + '"')) continue;
   html = setTextById(html, meta.ampSpanId, item.price + '€');
   html = setTextById(html, meta.nameSpanId, item.name_uk);
   if (meta.descSpanId && item.description_uk) {
     html = setTextById(html, meta.descSpanId, item.description_uk);
   }
-  const labelUk = composeLabel(meta, item, 'uk');
-  html = setAttrById(html, meta.cbId, 'value', labelUk);
   html = setSelectPlanArgById(html, meta.btnId, labelUk);
 }
 
