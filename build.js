@@ -194,6 +194,20 @@ function copyRecursive(srcDir, destDir) {
   }
 }
 
+// ---------- sanity check: inline scripts must parse ----------
+// A single syntax error (e.g. an unescaped apostrophe in a translation string)
+// silently kills all page JS and leaves .reveal sections invisible — fail the
+// build instead of deploying that.
+{
+  const scriptRe = /<script(?![^>]*\bsrc=)(?![^>]*ld\+json)[^>]*>([\s\S]*?)<\/script>/g;
+  let m, i = 0;
+  while ((m = scriptRe.exec(html))) {
+    i++;
+    try { new Function(m[1]); }
+    catch (e) { throw new Error('Inline <script> #' + i + ' has a syntax error: ' + e.message); }
+  }
+}
+
 fs.mkdirSync(DIST, { recursive: true });
 
 // copy every file from src/ as-is (images, CSS, robots.txt, sitemap.xml, CNAME, etc.)
