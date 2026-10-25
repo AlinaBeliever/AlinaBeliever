@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "glow-clinic",
-      "image": "images/gallery/glowclinic.png",
+      "image": "images/gallery/opt/glowclinic.jpg",
       "alt_uk": "Скріншот сайту косметологічної клініки Glow Clinic",
       "alt_en": "Screenshot of the Glow Clinic cosmetology website",
       "category_uk": "Краса та здоров'я",
@@ -12,19 +12,8 @@
       "link": "https://alinabeliever.github.io/Glow-Clinic/"
     },
     {
-      "id": "advocate-kyiv",
-      "image": "images/gallery/advocateportfolio.png",
-      "alt_uk": "Скріншот сайту адвокатської компанії Advocate Kyiv",
-      "alt_en": "Screenshot of the Advocate Kyiv law firm website",
-      "category_uk": "Юридичні послуги",
-      "category_en": "Legal Services",
-      "title_uk": "Advocate Kyiv — Адвокатська компанія",
-      "title_en": "Advocate Kyiv — Law Firm",
-      "link": "https://alinabeliever.github.io/Advocate-Kyiv/"
-    },
-    {
       "id": "khmarna-photography",
-      "image": "images/gallery/khmarna.png",
+      "image": "images/gallery/opt/khmarna.jpg",
       "alt_uk": "Скріншот сайту фотографа Khmarna Photography",
       "alt_en": "Screenshot of the Khmarna Photography website",
       "category_uk": "Фотографія",
@@ -34,15 +23,37 @@
       "link": "https://khmarnaphotography.com"
     },
     {
-      "id": "crema-cafe",
-      "image": "images/gallery/cremacafe.png",
-      "alt_uk": "Скріншот сайту кав'ярні Crema у Львові",
-      "alt_en": "Screenshot of the Crema coffee shop website in Lviv",
-      "category_uk": "Ресторанний бізнес",
-      "category_en": "Food & Beverage",
-      "title_uk": "Crema — Кав'ярня у Львові",
-      "title_en": "Crema — Coffee Shop in Lviv",
-      "link": "https://alinabeliever.github.io/crema_cafe/"
+      "id": "oree",
+      "image": "images/gallery/opt/oree-perfumery.jpg",
+      "alt_uk": "Скріншот сайту парфумерного бренду ORÉE",
+      "alt_en": "Screenshot of the ORÉE independent perfumery website",
+      "category_uk": "Парфумерія",
+      "category_en": "Perfumery",
+      "title_uk": "ORÉE — Нішевий парфумерний бренд",
+      "title_en": "ORÉE — Independent Perfumery",
+      "link": "https://oree-perfume.netlify.app"
+    },
+    {
+      "id": "advocate-kyiv",
+      "image": "images/gallery/opt/advocateportfolio.jpg",
+      "alt_uk": "Скріншот сайту адвокатської компанії Advocate Kyiv",
+      "alt_en": "Screenshot of the Advocate Kyiv law firm website",
+      "category_uk": "Юридичні послуги",
+      "category_en": "Legal Services",
+      "title_uk": "Advocate Kyiv — Адвокатська компанія",
+      "title_en": "Advocate Kyiv — Law Firm",
+      "link": "https://alinabeliever.github.io/Advocate-Kyiv/"
+    },
+    {
+      "id": "nua-laser",
+      "image": "images/gallery/opt/nua-laser.jpg",
+      "alt_uk": "Скріншот сайту студії лазерної епіляції NUA Laser",
+      "alt_en": "Screenshot of the NUA Laser hair removal studio website",
+      "category_uk": "Лазерна епіляція",
+      "category_en": "Laser Hair Removal",
+      "title_uk": "NUA Laser — Студія лазерної епіляції",
+      "title_en": "NUA Laser — Laser Hair Removal Studio",
+      "link": "https://nualaser.com"
     }
   ]
 }
